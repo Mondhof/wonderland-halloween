@@ -1,0 +1,1 @@
+document.addEventListener('click',e=>{if(e.target.closest('[data-cloud=project]')){document.querySelector('#panel')?.classList.remove('open');document.body.classList.add('projector');window.dispatchEvent(new Event('resize'));}});document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.body.classList.remove('projector');window.dispatchEvent(new Event('resize'));}});
