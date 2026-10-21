@@ -3,3 +3,56 @@
 @media(max-width:650px){.formgrid,.giftrow{grid-template-columns:1fr}.workhead small{float:none;display:block;margin-top:15px}.materialbar{gap:10px}.materialbar select{max-width:100%}}
 @media print{@page{size:A4;margin:0}html,body{margin:0;padding:0;background:white}.materialbar,.materialnote{display:none}.previewdock{margin:0!important;width:auto!important;height:auto!important;background:transparent;overflow:visible}.art,#art{position:relative!important;transform:none!important}.sheet{margin:0!important;box-shadow:none;break-after:page;print-color-adjust:exact;-webkit-print-color-adjust:exact}.sheet:last-child{break-after:auto}.workbench{font-size:10pt}.workhead{padding:15mm}.workhead h1{font-size:38pt}.workmain{padding:10mm}section{break-inside:avoid}.output .actions{display:none}*{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
 .hostcard{height:128mm;margin-bottom:6mm}.hosthelp{height:108mm}.choice .card-note{line-height:1.6}.ruleline span{overflow-wrap:anywhere}
+/* 2026-10-21: native 1080x2160 portrait compositions, revision 1x2. */
+.poster,.social{height:2160px}
+.poster .brand,.social .brand{top:48px}
+.poster .kicker{top:164px;font-size:26px;letter-spacing:8px}
+.poster.red:before{inset:0 0 800px}
+.poster.red h1{top:265px;left:48px;font-size:267px;line-height:1.1}
+.poster.red h1 span:last-child{font-size:231px;margin-top:22px}
+.poster .round{top:188px;right:64px;width:190px;height:190px;font-size:47px}
+.poster .hero{width:1130px;height:1050px;right:-150px;top:805px;transform:rotate(-12deg)}
+.poster .question{left:65px;top:1440px;width:615px;max-width:none;background:#f8e9d0;color:#244b3f;padding:24px 30px 28px;font-size:43px;line-height:1.4;box-shadow:9px 11px 0 #205a4e;transform:rotate(-3deg)}
+.poster .question small{font-size:28px;line-height:1.5;margin-top:18px}
+.poster .arrow{left:670px;top:1570px;width:225px;height:145px;z-index:6}
+.poster .steps{left:65px;right:65px;top:1800px;display:grid;grid-template-columns:1fr 1fr;gap:15px 40px;padding-top:22px;font-size:28px;background:#f8e9d0}
+.poster .info{left:65px;right:65px;top:1960px;padding-top:18px;font-size:26px;line-height:1.6}
+.poster .info b{font-size:21px}
+.poster .info .contact{font-size:23px}
+.poster .proof{bottom:30px;right:60px;font-size:17px}
+.poster.blue .stagephoto{inset:auto;top:620px;left:0;width:1080px;height:1260px;object-position:73% center;opacity:.83}
+.poster.blue:after{background:linear-gradient(#10366d 0%,#10366d 27%,transparent 44%,transparent 71%,#10366d 89%)}
+.poster.blue h1{top:290px;left:70px;font-size:218px;line-height:1.25}
+.poster.blue h1 span:last-child{font-size:194px;margin-left:42px}
+.poster.blue .round{top:1100px;right:80px;width:220px;height:165px;font-size:40px}
+.poster.blue .question{top:1460px;left:65px;width:670px;font-size:42px;padding:28px 35px;box-shadow:10px 13px 0 #ee5947}
+.poster.blue .steps{top:1810px;background:transparent}
+.poster.blue .info{top:1960px}
+.poster.blue .arrow{left:620px;top:925px;width:330px;height:190px}
+.socialno{top:71px;right:60px;font-size:27px}
+.social h1{top:280px;left:58px;font-size:204px;line-height:1.3;letter-spacing:-5px}
+.socialprop{right:-130px;top:800px;width:1200px;height:1030px;transform:rotate(-15deg)}
+.social1.red:before{content:'';position:absolute;left:0;right:0;bottom:0;height:590px;background:#f8e9d0}
+.social-note{position:absolute;top:1450px;left:65px;width:625px;padding:24px 30px 28px;background:#f8e9d0;color:#244b3f;box-shadow:10px 12px #205a4e;transform:rotate(-4deg);z-index:6}
+.social-note small,.social-note b{display:block}
+.social-note small{font-size:23px;letter-spacing:3px;margin-bottom:13px}
+.social-note b{font-size:37px;font-weight:500;white-space:nowrap}
+.social.blue .social-note{box-shadow:10px 12px #ee5947;color:#143e77}
+.social p{left:65px;top:1770px;bottom:auto;font-size:36px;line-height:1.65;margin:0;max-width:950px}
+.social footer{left:65px;right:65px;bottom:132px;padding-top:25px;font-size:25px}
+.social .proof{bottom:54px;right:60px;font-size:17px}
+.social2 .socialpaddle{top:830px;left:310px;right:auto;width:620px;height:620px;border:14px solid #fff0d0;outline:4px solid #205a4e;transform:rotate(8deg);box-shadow:22px 22px #ee5947}
+.social2 .socialpaddle small{font-size:40px;margin-top:50px}
+.social2 .socialpaddle b{font-size:305px;line-height:1.2}
+.social2 .socialpaddle span{font-size:34px}
+.social2 .social-note{top:1500px;left:75px;width:720px}
+.social2 .social-note b{font-size:36px}
+.social2 p{top:1800px}
+.social2.blue .socialpaddle{box-shadow:22px 22px #c9d9e3}
+.social3 .socialstop{left:82px;top:940px;font-size:41px;padding:18px 28px;border-top-width:10px}
+.social3 .socialcard{right:80px;top:1170px;width:775px;padding:46px 50px 40px;transform:rotate(6deg);box-shadow:18px 18px #205a4e}
+.social3 .socialcard small{font-size:26px;letter-spacing:6px}
+.social3 .socialcard b{font-size:62px;margin:34px 0 30px}
+.social3 .socialcard span{font-size:35px}
+.social3 .choice-stroke{display:block;height:37px;border-bottom:1px solid #9eab96}
+.social3.blue .socialcard{box-shadow:18px 18px #ee5947}
