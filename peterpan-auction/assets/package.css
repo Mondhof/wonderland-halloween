@@ -56,3 +56,6 @@
 .social3 .socialcard span{font-size:35px}
 .social3 .choice-stroke{display:block;height:37px;border-bottom:1px solid #9eab96}
 .social3.blue .socialcard{box-shadow:18px 18px #ee5947}
+
+/* 宣传视觉R2：已核验原标PNG，课堂A4样式保持R1待更新 */
+.campaign-r2{position:relative;overflow:hidden;flex-shrink:0}.campaign-r2.portrait{width:1080px;height:2160px}.campaign-r2.landscape{width:1920px;height:1080px}.campaign-r2>img{display:block;width:100%;height:100%;object-fit:contain}
