@@ -1,0 +1,58 @@
+(()=>{'use strict';const C=window.COURSE,$=s=>document.querySelector(s),esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const scope=p=>p.lot==='practice'?'practice':'lot1';
+const balance=(s,id,lot)=>C.rules.initial-s.records.filter(r=>r.id===id&&(lot==='practice'?r.lot==='practice':r.lot!=='practice')).reduce((a,r)=>a+r.price,0);
+function auction(p,s,h){const d=h.detail(p,s),lot=scope(p),number=d.bidder??8,price=d.price??C.rules.opening,count=s.records.filter(r=>r.lot===lot).length;return `${h.title(lot==='practice'?'试拍一次，':'把故事',lot==='practice'?'练会再开始。':'讲出来。')}<div class="auction-object">${h.photo('props-cutout.webp','故事本与创作道具类别示意','cutout')}<span>${lot==='practice'?'试拍 / 不收正式积分币':'类别示意 / 不是已确认采购实物'}</span><p>${C.lots[lot].name} · 演示${count} / ${C.lots[lot].units}份</p></div><div class="auction-console"><small>课堂模拟 · 与真实积分分开</small><div class="auction-price"><b>${price}</b><span>积分</span>${h.button('＋5','f-raise')}</div><div class="bidder-line"><label>点到号码 <input id="bidder" type="number" min="1" max="24" aria-label="竞拍编号" value="${esc(number)}"></label><span>余额 <b id="bidder-balance">${Number.isInteger(Number(number))&&number>=1&&number<=24?balance(s,Number(number),lot):'待核对'}</b></span></div><div class="host-call"><span>${['先听介绍，再报清楚。','第一次提醒：还有新的考虑吗？','第二次提醒：先核对余额与资格。','请本人确认；付款与登记也要当场完成。'][d.call||0]}</span>${h.button((d.call||0)>=3?'口令已完成 ✓':'下一句主持口令','f-host',` ${(d.call||0)>=3?'disabled':''}`,'quiet')}</div><div class="auction-actions">${h.button(d.armed?'已核对，模拟付款并记录':'核对号码与报价','f-award')}${h.button('撤销本类上一笔','f-undo','','quiet')}${h.button('本件重新报价','f-price-reset','','quiet')}</div>${h.feedback(d)}<p class="auction-boundary">手动确认；未竞得不扣币。真实活动当面支付实体积分币。</p></div>`;}
+function getReviews(){try{return JSON.parse(localStorage.getItem('pan-auction-reviews-v1.3')||'{}')}catch{return{}}}
+function reviewText(r){return `人生拍卖会 / HTML v1.3 / ${r.theme==='red'?'红':'蓝'}版 / 第${r.page}页\n老师：${r.teacher}\n结论：${r.status}\n意见：${r.comment||'通过，无修改意见。'}`;}
+window.FULL_END=(p,s,h)=>{const {detail,button,tabs,title,photo,feedback,timer}=h,d=detail(p,s),k=d.step||0,n=p.displayNumber;
+switch(n){
+case 23:case 25:return auction(p,s,h);
+case 24:return `${title('喝口水，','把节奏放慢。')}<div class="break-image">${photo('hero-b.webp','暂时安静的拍卖舞台')}</div><div class="break-clock">${timer(p,d)}<p>看看选择卡，核对剩余币。<br>需要帮助，找协助老师。</p></div><span class="break-mark">PAUSE</span>`;
+case 26:{const rs=s.records.filter(r=>r.lot!=='practice');return `${title('对上了，','再领取。')}<div class="receipt-sheet"><header><b>${rs.length?'本机模拟账本':'教学票据 / 并非真实记录'}</b><span>当场支付 · 点收 · 核对 · 登记</span></header>${rs.length?`<table class="ledger"><thead><tr><th>号码</th><th>演示品名</th><th>成交 / 实付</th><th>剩余币</th></tr></thead><tbody>${rs.slice(-6).map(r=>`<tr><td>${String(r.id).padStart(2,'0')}</td><td>${esc(C.lots[r.lot].name)}</td><td>${r.price} / ${r.price}</td><td>${balance(s,r.id,'lot1')}</td></tr>`).join('')}</tbody></table><p>仅显示最近6笔模拟记录；正式台账仍需收付双方当面确认。</p>`:`<div class="receipt-fields">${[['谁的号码','08','号码牌与登记对上'],['成交 / 实付','35','35积分，当场本人支付'],['核对剩余','65','100 − 35 = 65']].map(([label,value,note],i)=>button(`<small>${label}</small><b>${d.checks?.includes(i)?value:'？'}</b><span>${d.checks?.includes(i)?note:'先说怎么核对，再点开'}</span>`,'f-receipt',`data-index="${i}"`,d.checks?.includes(i)?'checked':'')).join('')}</div>`}<footer>有出入：先暂停领取，一起复点。不是到最后才付款。</footer></div>`;}
+case 27:return `${title('先复述，','再提问。')}<div class="listener-source"><small>先听说的人</small><p>我想选故事本，<br>因为我想记录新人物。</p></div><div class="listener-reply">${d.open?`<small>${['听的人 · 先复述','说的人 · 来确认','听的人 · 接着问'][k]}</small><h2>${['我听见你想记录新人物，对吗？','对。我还想给人物写对话。','你最想先写哪一个人物？'][k]}</h2>${button(k===2?'收起，再用自己的话练':'等对方回应，再继续 →','f-listen-next')}`:button('我听清了，开始复述 ↗','f-open','','reveal-note')}<div class="listen-path">${['复述','确认','追问'].map((x,i)=>`<span class="${d.open&&i===k?'active':''}">${x}</span>`).join('')}</div></div>`;
+case 30:return `${title('原来，','现在。')}<div class="reflection-paper"><small>对照自己的选择卡</small><div class="original-plan">原来我想：<b>${esc(s.text['plan-item']||'先回想自己的原计划')}</b></div><label>现在我决定<input id="reflect-now" maxlength="45" aria-label="现在的决定" value="${esc(s.text['reflect-now']||'')}" placeholder="保持、改变或停止，都可以"></label><label>因为<input id="reflect-why" maxlength="60" aria-label="现在的理由" value="${esc(s.text['reflect-why']||'')}" placeholder="说一个真实的理由"></label><p>不必为了“有变化”而改变。</p></div>`;
+case 31:return `<div class="feedback-type">${['我听见，','你做到了，','下一次，'][k]}</div><div class="feedback-number">0${k+1}</div><div class="feedback-sentence"><small>${['用原话作证据','说一个具体表现','只给一个下一步'][k]}</small><h2>${['“我听见你说……”','“你把用途说清楚了。”','“下次，补一个使用时间。”'][k]}</h2><p>${['只说你确实观察到的事。','指出一个看得见的表达动作。','给建议后，留出再试的机会。'][k]}</p>${button(k===2?'回到原话 ↻':'接着说 →','f-feedback-next')}</div>`;
+case 32:return `${title('把选择，','带回家。')}<div class="home-object">${photo('props-cutout.webp','把自己的想法说清楚','cutout')}</div><div class="home-task">${tabs(['入门','基础','进阶'],d)}<h2>${esc(p.items[k].split('：')[1])}</h2><div class="home-path">选物 → 说理由${k>0?' → 回应':''}</div>${button(d.open?'收起准备提示':'看看怎么准备 ↗','f-open','','quiet')}<p>${d.open?['拿一件普通物品，口头说一个自己的理由。','补上具体用途；家长只问一个相关问题。','比较两件物品后作决定，再回应一个相关追问。'][k]:'先说一遍，不照背；提交时间由当班老师告知。'}</p></div>`;
+case 33:return `<div class="closing-copy"><small>人生第一场拍卖会</small><h1>有声，<span>有主见。</span></h1><p>每一次认真与坚持，<br>都值得被看见。</p></div><div class="closing-art">${photo('props-cutout.webp','今天的选择与表达','cutout')}<div>让坚持，<br>成为底气。</div></div><div class="closing-action"><span>把一句自己的理由，留在今天。</span>${button('回到开场 ↗','f-goto','data-page="1"','quiet')}</div>`;
+default:throw new Error('No page view: '+n);
+}};
+window.FULL_END_HANDLE=(a,b,p,s,api)=>{const d=window.FULL_DECK.detail(p,s);
+if(a==='f-feedback-next'){d.step=((d.step||0)+1)%3;api.render();return true;}
+if(a==='f-listen-next'){if((d.step||0)>=2){d.step=0;d.open=false;}else d.step=(d.step||0)+1;api.render();return true;}
+if(a==='f-receipt'){const i=Number(b.dataset.index);d.checks??=[];d.checks=d.checks.includes(i)?d.checks.filter(x=>x!==i):[...d.checks,i];api.render();return true;}
+if(['f-raise','f-price-reset','f-host','f-award','f-undo'].includes(a)){
+ const lot=scope(p),id=Number(d.bidder??8),price=d.price??C.rules.opening;
+ if(a==='f-host'){d.call=Math.min(3,(d.call||0)+1);d.note='';}
+ if(a==='f-raise'){if(price+C.rules.step>C.rules.cap)d.note='已经到50积分封顶。先暂停，按事先公布的同价办法处理。';else{d.price=price+C.rules.step;d.call=0;d.armed=false;d.note='报价已变化，重新走主持与核对流程。';}}
+ if(a==='f-price-reset'){d.price=C.rules.opening;d.call=0;d.armed=false;d.note='本件从10积分重新报价，已完成的演示记录保留。';}
+ if(a==='f-undo'){let i=s.records.length-1;while(i>=0&&s.records[i].lot!==lot)i--;if(i>=0){const [r]=s.records.splice(i,1);d.note=`已撤销本类上一笔：${r.id}号，${r.price}积分。余额已恢复。`;}else d.note='本类还没有可撤销的演示记录。';d.armed=false;}
+ if(a==='f-award'){
+  if(!Number.isInteger(id)||id<1||id>C.rules.children)d.note='号码范围是1—24，请先核对。';
+  else if(!Number.isInteger(price)||price<C.rules.opening||price>C.rules.cap||(price-C.rules.opening)%C.rules.step!==0)d.note='报价必须从10开始、每次加5，并在50以内。';
+  else if(s.records.filter(r=>r.id===id&&(lot==='practice'?r.lot==='practice':r.lot!=='practice')).length>=C.rules.maxWins)d.note='这个号码已经竞得1份；转介绍或倾听角色，不再扣币。';
+  else if(s.records.filter(r=>r.lot===lot).length>=C.lots[lot].units)d.note='本类演示份数已满，先核对数量。';
+  else if(price>balance(s,id,lot))d.note='余额不足，先核对或停止，不借用别人的币。';
+  else if((d.call||0)<3)d.note='先完成主持口令，核对余额与资格，再确认。';
+  else if(!d.armed){d.armed=true;d.note=`请本人确认：${String(id).padStart(2,'0')}号，付${price}积分，还剩${balance(s,id,lot)-price}积分。核对后再点模拟付款。`;}
+  else{s.records.push({id,lot,price});d.price=C.rules.opening;d.call=0;d.armed=false;d.note=`演示已记录：${id}号，${price}积分，余额${balance(s,id,lot)}。正式活动当面点收实体币后登记领取。`;}
+ }
+ api.render();return true;
+}
+if(a==='review'){
+ s.notes=false;window.FULL_DECK.closePanels();const key=document.documentElement.dataset.theme+'-'+p.displayNumber,old=getReviews()[key]||{},count=Object.keys(getReviews()).length;
+ $('#review').innerHTML=`<button class="close-notes" data-action="close-panel">关闭 ×</button><h2>第${p.displayNumber}页 · 本页审阅</h2><p>HTML v1.3 / ${document.documentElement.dataset.theme==='red'?'红':'蓝'}版</p><p class="review-boundary">仅保存在本浏览器，尚未提交给刘玥。复制意见后发送给刘玥，才完成反馈。</p><label>老师姓名<input id="review-name" value="${esc(old.teacher||s.reviewer||'')}" maxlength="30"></label><label>审阅结论<select id="review-status"><option ${old.status==='通过'?'selected':''}>通过</option><option ${old.status!=='通过'?'selected':''}>需要修改</option></select></label><label>具体意见<textarea id="review-comment" rows="5" placeholder="第几处、哪里不合适、建议怎样改？">${esc(old.comment||'')}</textarea></label><div class="review-buttons"><button data-action="f-review-save">保留本机草稿</button><button data-action="f-review-copy">复制本页意见</button><button data-action="f-review-all">复制全部意见</button></div><p id="review-notice">本浏览器已有${count}条草稿。</p><textarea id="review-output" readonly rows="7" aria-label="可复制的审阅意见"></textarea>`;$('#review').hidden=false;return true;
+}
+if(a.startsWith('f-review-')){
+ let reviews=getReviews(),key=document.documentElement.dataset.theme+'-'+p.displayNumber;
+ if(a!=='f-review-all'){const teacher=$('#review-name').value.trim(),comment=$('#review-comment').value.trim(),status=$('#review-status').value;if(!teacher||status==='需要修改'&&!comment){$('#review-notice').textContent='请填老师姓名；需要修改时，请写具体意见。';return true;}reviews[key]={teacher,comment,status,page:p.displayNumber,theme:document.documentElement.dataset.theme};s.reviewer=teacher;try{localStorage.setItem('pan-auction-reviews-v1.3',JSON.stringify(reviews));}catch{$('#review-notice').textContent='浏览器无法保存；请先复制意见发送给刘玥。';}}
+ const text=a==='f-review-all'?Object.values(reviews).map(reviewText).join('\n\n'):reviewText(reviews[key]);$('#review-output').value=text;
+ $('#review-notice').textContent=a==='f-review-save'?'已保存在本浏览器，未提交。':'正在复制；未自动发送。';if(a!=='f-review-save'){navigator.clipboard?.writeText(text).then(()=>$('#review-notice').textContent='已复制，请发送给刘玥；未自动提交。').catch(()=>{$('#review-output').select();$('#review-notice').textContent='请复制下方文字后发给刘玥。';});}return true;
+}
+if(a==='settings'){
+ s.notes=false;window.FULL_DECK.closePanels();$('#settings').innerHTML=`<button class="close-notes" data-action="close-panel">关闭 ×</button><h2>老师先看这里</h2><p>HTML v1.3 · 红蓝各33页 · 同一套90分钟内容；红蓝不表示难度分层。</p><p><a href="teacher-guide.html" target="_blank">打开逐页授课与点击流程 ↗</a></p><p><a href="teacher-package.html" target="_blank">备课清单、跟进、宣传与口播 ↗</a></p><p><a href="review-checklist.html" target="_blank">填写礼品、配币与规则最终确认单 ↗</a></p><p><a href="materials.html" target="_blank">海报与课堂物料预审 ↗</a></p><h3>正式上课前确认</h3><p>品名、实物数量、积分兑换方式、起始币、起拍/步长/封顶、资格与同价办法、活动日期场地、作业提交与反馈时间。</p><p>演示值：100初始、10起拍、＋5、50封顶、24个编号、每人最多1份进阶拍品。试拍与进阶演示账本分开。</p><h3>本浏览器模拟记录</h3><p>${s.records.map(r=>`${r.lot==='practice'?'试拍':'进阶'}：${r.id}号 / ${r.price}积分`).join('<br>')||'暂无记录'}</p><button data-action="f-clear-ledger">清空模拟账本</button><p id="setting-notice">只影响本浏览器的模拟记录，不涉及真实积分。</p>`;$('#settings').hidden=false;return true;
+}
+if(a==='f-clear-ledger'){if(!b.dataset.armed){b.dataset.armed='1';b.textContent='再点一次：清空本机模拟记录';}else{s.records=[];Object.values(s.details).forEach(x=>{delete x.armed;});$('#setting-notice').textContent='模拟账本已清空。';b.textContent='清空模拟账本';delete b.dataset.armed;api.render();}return true;}
+return false;
+};
+window.FULL_END_INPUT=(e,p,s,api)=>{if(e.target.id==='bidder'){const d=window.FULL_DECK.detail(p,s);d.bidder=e.target.value;d.armed=false;const id=Number(d.bidder),el=$('#bidder-balance');if(el)el.textContent=Number.isInteger(id)&&id>=1&&id<=24?balance(s,id,scope(p)):'待核对';const confirm=$('[data-action="f-award"]');if(confirm)confirm.textContent='核对号码与报价';api.save();}};
+})();
