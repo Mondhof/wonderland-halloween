@@ -6,10 +6,10 @@ const fields=[
 ['host','主讲 / 主持老师','text','',3],['cashier','点收与找零老师','text','',3],['registrar','登记与实物发放老师','text','',3],['helper','秩序 / 倾听观察 / 安全协助','text','',3],['setup','物料准备负责人、到位时间','text','',3],['rehearsal','试讲时间、设备与问题处理','text','',3],
 ['fee','费用及包含内容；内部课可写不另招募','text','',4],['contact','咨询或报名方式；内部课可写班级通知','text','',4],['prep','孩子需带的物品；无需也写清楚','text','',4]
 ];
-const defaults=Object.fromEntries(fields.map(([k,l,t,v])=>[k,v]));defaults.gifts=Array.from({length:3},()=>({name:'',spec:'',use:'',units:'',source:''}));defaults.checks={};defaults.version='HTML v1.3 / 配套R1';defaults.updated='';
+const defaults=Object.fromEntries(fields.map(([k,l,t,v])=>[k,v]));defaults.gifts=Array.from({length:3},()=>({name:'',spec:'',use:'',units:'',source:''}));defaults.checks={};defaults.version='HTML v1.3 / 配套R2';defaults.updated='';
 const key='pan-auction-final-parameters-r1';
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function get(){try{const x=JSON.parse(localStorage.getItem(key)||'null');return x&&typeof x==='object'?{...structuredClone(defaults),...x,gifts:Array.isArray(x.gifts)?x.gifts:structuredClone(defaults.gifts)}:structuredClone(defaults)}catch{return structuredClone(defaults)}}
+function get(){try{const x=JSON.parse(localStorage.getItem(key)||'null');return x&&typeof x==='object'?{...structuredClone(defaults),...x,version:defaults.version,gifts:Array.isArray(x.gifts)?x.gifts:structuredClone(defaults.gifts)}:structuredClone(defaults)}catch{return structuredClone(defaults)}}
 function save(d){d.updated=new Date().toISOString();localStorage.setItem(key,JSON.stringify(d));}
 function sums(d){const num=k=>Number(d[k])||0,per=num('ten')+num('five')+num('one'),points=num('ten')*10+num('five')*5+num('one');return{per,points,ten:num('people')*num('ten')+num('reserveTen'),five:num('people')*num('five')+num('reserveFive'),one:num('people')*num('one')+num('reserveOne'),total:num('people')*per+num('reserveTen')+num('reserveFive')+num('reserveOne'),gift:d.gifts.reduce((a,g)=>a+(Number(g.units)||0),0)}}
 const checks=['拍品名称、实物与份数已逐项核对','积分额度、实体张数与备用币已核对','竞拍、同价、流拍和付款规则可执行','页序、90分钟或调整后的用时已试走','分工、布置、作业和宣传信息已核对'];
