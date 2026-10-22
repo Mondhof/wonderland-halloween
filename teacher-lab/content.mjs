@@ -1,4 +1,4 @@
-export const VERSION='2026-10-28.week2.v1';
+export const VERSION='2026-10-23.vol2.v1';
 export const PROFILES={he:{name:'何静',listening:'听力补测 · 单独记录',focus:'读清任务条件；说清谁先问、谁回答；加入变化后的检查。',guided:'先练规则与步骤7分钟，再练完整指令和变化检查8分钟。'},zuo:{name:'左丽慧',listening:'新材料听力迁移',focus:'结合语境区分喜好与提供；准确答语；活动先示范、再检查规则、再开始。',guided:'语境与答语6分钟、活动启动4分钟，再用5分钟补齐“先读再解释”。'}};
 export const SCRIPTS={
 check:'This is a sound check. You can hear this sentence.',
@@ -28,11 +28,11 @@ fri:{title:'第四阶段 · 新情境检验',date:'同场跟练之后',minutes:1
 export const EXAMPLES={r3:'After one question. / They swap roles after asking and answering one question. 等义表达可接受。',r4:'双方没有相同的可见信息，需要通过问答来获得物品位置；不是只看图照说。',w1:'What food do you like? / What kind of food do you like? 等合适改写都可。',w2:'Yes, I do. 也可明确写Yes, I like carrots.（补全宾语）；不把完整合理表达误判为错。',w3:'A, ask B, “Do you like apples?” B, answer. Then swap roles. Who asks first? 这是示例，不要求逐词相同。',w4:'目标：Children can ask and answer about a partner’s food preferences. 检查：换搭档、换食物后，老师不先给答案，请个体完成一次问答。',fw1:'A, ask B, “Do you like bananas?” B, say “Yes, I do” or “No, I don’t.” Then swap roles. Who asks first? 接受其他清楚、适龄的说法。'};
 export const GUIDED={he:{title:'把规则读准，再让变化听得见',blocks:[{title:'先学：规则不是活动名称',text:'each pair说明每对的数量，swap roles说明双方轮换。活动开始前先示范，再检查规则；最后用变化后的对象检查理解。'},{title:'再改：把话说完整',text:'A, ask B… / B, answer… / Then swap roles. / Who asks first? 指令、分工和检查缺一项，就补一句。'}],prompt:'用胡萝卜调查写一轮完整课堂指令；再写变化前后两条位置指令，以及最后的问题。',check:['我写明了谁先问、谁回答和交换时机','我的规则检查让听者说出或演出步骤','我在两条位置指令中明确改变了物品或参照物']},zuo:{title:'先看语境，再说准确的课堂话语',blocks:[{title:'先学：问喜好和当下提供',text:'Do you like…?问一般喜好，通常用Yes, I do / No, I don’t。递出食物时Would you like…?是提供，可用Yes, please / No, thank you。'},{title:'再改：先示范与检查，再开始',text:'先给一个完整回合；检查谁先问、是否遮卡、何时交换；再让两人练。朗读释义任务分为先读、再用自己的话讲。'}],prompt:'分别写“调查是否喜欢牛奶”和“递出一杯牛奶”的提问及答语；再写一个双人活动启动流程。',check:['我根据当下语境选择提问和答语','我把第一位提问者、交换和规则检查说清','我补录了先读再解释，而不是只给释义']}};
 
-export const SESSION={totalMinutes:90,suggestedWindow:'14:30—16:00',day:'工作日中统一选择一个下午，不固定具体日期',phases:[
+export const SESSION={totalMinutes:90,suggestedWindow:'14:30—16:00',day:'2026-10-23（周五）14:00—18:00工作时段内完成并提交',phases:[
  {minutes:37,title:'独立作答',detail:'3分钟设备检查＋34分钟听读写说',evidence:'原答、两段录音和设备起止时间'},
  {minutes:15,title:'反馈后跟练',detail:'看自己的错题，改写并再录',evidence:'指导后的版本，单独保存'},
  {minutes:10,title:'同事试讲',detail:'两人互换角色，按话执行并修改',evidence:'原句、执行卡点、修改句与理由'},
  {minutes:5,title:'休息',detail:'短暂休息，收起示例',evidence:'无需填写记录'},
  {minutes:15,title:'新情境检验',detail:'换音频、食物和道具，不看模板再试',evidence:'指导后即时迁移，另存答案与两段录音'},
  {minutes:8,title:'复盘与保存',detail:'5分钟复盘下载＋3分钟缓冲',evidence:'下载一份包含所有阶段及录音的完整答卷'}],
- stageKeys:{wed:'initial-independent',guided:'guided-after-feedback',thu:'colleague-guided-practice',fri:'same-session-transfer-after-guidance'},retentionCheck:'下一周整块研习开始时用新材料短查，不另拆工作日小任务'};
+ stageKeys:{wed:'initial-independent',guided:'guided-after-feedback',thu:'colleague-guided-practice',fri:'same-session-transfer-after-guidance'},retentionCheck:'后续整块测试中用新材料检查保持，不另拆工作日小任务'};

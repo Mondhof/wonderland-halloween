@@ -22,7 +22,7 @@ window.WL_BRAND=(()=>{
   return {start,end,index,english:slogans[index][0],chinese:slogans[index][1],action:slogans[index][2]};
  }
  const esc=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- function weekly(place='home'){const s=weekInfo();return `<section class="weekly-encouragement ${place}" aria-label="本周鼓励"><div class="weekly-heading"><span>温迪陪你一起成长 · 第2周研习</span><small data-week-range>${s.start} — ${s.end}</small></div><p class="weekly-en" data-week-english lang="en">${esc(s.english)}</p><p class="weekly-cn" data-week-chinese>${esc(s.chinese)}</p><p class="weekly-action" data-week-action>${esc(s.action)}</p></section>`;}
+ function weekly(place='home'){const s=weekInfo();return `<section class="weekly-encouragement ${place}" aria-label="本周鼓励"><div class="weekly-heading"><span>温迪陪你一起成长 · Vol.2 测评与跟练</span><small data-week-range>${s.start} — ${s.end}</small></div><p class="weekly-en" data-week-english lang="en">${esc(s.english)}</p><p class="weekly-cn" data-week-chinese>${esc(s.chinese)}</p><p class="weekly-action" data-week-action>${esc(s.action)}</p></section>`;}
  function wordmark(){return `<div class="brand">${name}<span>教师研习台 · 试用版</span></div>`;}
  function lion(cls=''){return `<img class="wendy-lion ${cls}" src="./assets/wendy-lion.webp" alt="温迪小狮，戴圆眼镜、穿蓝色马甲的温德兰小狮子" width="402" height="720" decoding="async">`;}
  function refresh(){const s=weekInfo();for(const [sel,key] of [['[data-week-english]','english'],['[data-week-chinese]','chinese'],['[data-week-action]','action']])document.querySelectorAll(sel).forEach(el=>{if(el.textContent!==s[key])el.textContent=s[key];});document.querySelectorAll('[data-week-range]').forEach(el=>el.textContent=s.start+' — '+s.end);}
