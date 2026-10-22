@@ -1,0 +1,84 @@
+[
+  {
+    "id": "check",
+    "file": "device-check.mp3",
+    "voice": "macOS Daniel en_GB",
+    "baseRateRequestedWpm": 130,
+    "tempoFactor": 0.8,
+    "script": "This is a sound check. You can hear this sentence.",
+    "sha256": "2763901e7715f24b4247e933e3cefa7741ee4f37ed2b257a210a202b10947d16",
+    "decodedSeconds": 4.3406875,
+    "bytes": 35372
+  },
+  {
+    "id": "wedA",
+    "file": "wed-a.mp3",
+    "voice": "macOS Daniel en_GB",
+    "baseRateRequestedWpm": 130,
+    "tempoFactor": 0.8,
+    "script": "Before the classroom game, each pair gets two picture cards. The children keep their cards hidden. Amy asks first and Ben answers. After one question, they swap roles. In Amy’s picture, a pencil is under a chair and a book is on a table. I model one exchange, then ask the children who will speak first. At the end, I move the pencil into a box and ask one child to describe its new position without copying me.",
+    "sha256": "bf9ff18023ec4bd9fa50d3b6988e6ddd44fb05133bbb813c08bfee9c34fc9b2c",
+    "decodedSeconds": 36.184625,
+    "bytes": 290156
+  },
+  {
+    "id": "wedB",
+    "file": "wed-b.mp3",
+    "voice": "macOS Daniel en_GB",
+    "baseRateRequestedWpm": 130,
+    "tempoFactor": 0.8,
+    "script": "During the snack activity, I hold out a cup of water and ask, “Would you like some water?” The child answers, “No, thank you.” That is a polite refusal, so I put the cup down. Later, we make a survey. I ask, “Do you like bananas?” This time I want to find out a general preference. Before children begin, I show a short exchange with a colleague and check who asks first. I do not ask children to accept the water just because my example answer was “Yes, please.”",
+    "sha256": "c545aa031375f3c6e093d83b2b4f7c21d476469135a82307b9eb663c8eea102b",
+    "decodedSeconds": 41.050625,
+    "bytes": 329132
+  },
+  {
+    "id": "friA",
+    "file": "fri-a.mp3",
+    "voice": "macOS Daniel en_GB",
+    "baseRateRequestedWpm": 130,
+    "tempoFactor": 0.8,
+    "script": "Look at the toy animal. At first, it is on the desk. I move it under a chair and ask one child to tell me where it is now. In the next activity, I hold out a carrot and ask, “Would you like a carrot?” I am offering food, not asking about a general preference.",
+    "sha256": "8a032bc10fde64deeb329ebd03bfe689f50a62dd8ef5ccf52e1db35da08e712a",
+    "decodedSeconds": 21.53,
+    "bytes": 173036
+  },
+  {
+    "id": "readingModel",
+    "file": "guide-reading.mp3",
+    "voice": "macOS Daniel en_GB",
+    "baseRateRequestedWpm": 130,
+    "tempoFactor": 0.8,
+    "script": "A clear model helps children begin a new activity. Before pair work, check who asks first and when partners change roles. Later, change the picture or object and ask one child to try without your model. This helps you see what the child can do independently. Now, in my own words: show children how to start, then give them a new situation. Listen to one child without saying the answer first.",
+    "sha256": "39c34de0d5e758f4b0fb6ac89dccc434df24fb5088cd4898c2b504d9828dd53c",
+    "decodedSeconds": 33.7804375,
+    "bytes": 270956
+  },
+  {
+    "id": "pairModel",
+    "file": "guide-pairs.mp3",
+    "voice": "macOS Daniel en_GB",
+    "baseRateRequestedWpm": 130,
+    "tempoFactor": 0.8,
+    "script": "Work in pairs. A, ask B, “Do you like apples?” B, answer, “Yes, I do,” or, “No, I don’t.” Then swap roles. Who asks first?",
+    "sha256": "60f2a57aa448b751b4037f2a823a252c5933314bc327e4abf55c6444984e1070",
+    "decodedSeconds": 15.2374375,
+    "bytes": 122540
+  },
+  {
+    "id": "underModel",
+    "file": "guide-under.mp3",
+    "voice": "macOS Daniel en_GB",
+    "baseRateRequestedWpm": 130,
+    "tempoFactor": 0.8,
+    "script": "Look! The book is under the chair. Put the book under the chair. [等待3秒] Now put the pencil under the chair. [等待3秒] Where is the pencil? [等待3秒]",
+    "silentWaitSeconds": [
+      3,
+      3,
+      3
+    ],
+    "sha256": "0f318cf71a803f302d16e15ab779dffcf922e6c81bc954591c42edf9e2b18baf",
+    "decodedSeconds": 18.434,
+    "bytes": 148268
+  }
+]

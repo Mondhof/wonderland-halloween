@@ -1,0 +1,15 @@
+import{VERSION,PACKETS,SESSION}from'./content.mjs';
+export const clone=x=>JSON.parse(JSON.stringify(x));
+export const normal=x=>String(x??'').normalize('NFKC').toLowerCase().replace(/[,，]/g,' ').trim().replace(/[.!?。]+$/g,'').trim().replace(/\s+/g,' ');
+export const hasValue=v=>typeof v==='number'||(typeof v==='string'&&v.trim().length>0);
+export function freshTask(){return{id:crypto.randomUUID(),answers:{},audio:{},flags:{audioFailure:false,plays:{},deviceConfirmed:false,reviewExposed:false},startedAt:null,snapshot:null};}
+export function freeze(task,now=new Date().toISOString(),phase='initial-independent'){
+ if(task.snapshot)throw Error('独立答卷已锁定，不能覆盖。');if(!task.startedAt)throw Error('请先开始本次计时。');
+ return{...clone(task),snapshot:{attemptId:task.id,answers:clone(task.answers),audio:clone(task.audio),flags:clone(task.flags),startedAt:task.startedAt,endedAt:now,elapsedSeconds:Math.max(0,Math.round((Date.parse(now)-Date.parse(task.startedAt))/1000)),stage:task.flags.reviewExposed?'owner-review-practice':phase==='same-session-transfer-after-guidance'?phase:'independent-first'}};
+}
+export function evaluate(mode,snapshot){const p=PACKETS[mode],answers=snapshot.answers,failed=snapshot.flags.audioFailure===true;
+ const items=p.listening.map(q=>{const value=answers[q.id],unmeasured=failed||!hasValue(value),correct=unmeasured?null:q.type==='choice'?Number.isInteger(value)&&value===q.answer:normal(value).split(' ').length<=q.maxWords&&q.answers.some(a=>normal(a)===normal(value));return{id:q.id,value:value??null,correct,points:unmeasured?null:correct?(mode==='wed'?4:1):0,max:mode==='wed'?4:1,explanation:q.explanation,reason:failed?'播放故障，未测':!hasValue(value)?'未答，不作能力判断':null};});
+ const reading=(p.readingQuestions||[]).filter(q=>q.type==='short').map(q=>({id:q.id,value:answers[q.id]??null,correct:!hasValue(answers[q.id])?null:q.answers.some(a=>normal(a)===normal(answers[q.id])),explanation:q.explanation}));
+ return{version:VERSION,listening:{items,points:items.reduce((a,q)=>a+(q.points??0),0),measuredMax:items.filter(q=>q.points!==null).reduce((a,q)=>a+q.max,0),paperMax:p.listeningMax,unmeasured:items.filter(q=>q.points===null).length,status:failed?'unmeasured-device':items.some(q=>q.points===null)?'incomplete':'measured'},reading,openAnswerStatus:'requires-evidence-review',audioContentStatus:'not-automatically-scored',totalScore:null};}
+export function missing(mode,task){const p=PACKETS[mode];return[...p.listening,...(p.readingQuestions||[]),...p.writing].filter(q=>!hasValue(task.answers[q.id])).map(q=>q.id).concat(p.speaking.filter(q=>!task.audio[q.id]).map(q=>q.id+'录音'));}
+export function exportPackage(profile,record,clips){return{format:'wonderland-teacher-week2-response',schemaVersion:2,sessionPlan:clone(SESSION),version:VERSION,preview:false,teacher:{name:profile.name},exportedAt:new Date().toISOString(),timerSource:'device-wall-clock-not-active-time',...clone(record),clips,automaticFeishuReviewEnabled:false,notice:'录音包含在clips中，不会自动上传。请将完整JSON发飞书英语部群，并在本人文件线程实际@月神；第2周待月神复核，尚未开启自动分析。同场独立作答、提示后跟练、同事试讲与指导后即时迁移分别保存；不据同场结果判断长期保持。'};}
