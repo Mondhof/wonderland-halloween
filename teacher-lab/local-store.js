@@ -17,9 +17,9 @@ const WL_LOCAL = (()=>{
  async function route(path,data){
   const [r,query='']=path.split('?'),params=new URLSearchParams(query);
   if(r==='status')return {local:false,version:source.version,static:true};
-  if(r==='login'){const name=String(data.code||'').trim().slice(0,40);if(!name)throw Error('请填写老师姓名或代号');const bytes=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(name));active={id:'teacher-'+Array.from(new Uint8Array(bytes)).slice(0,10).map(x=>x.toString(16).padStart(2,'0')).join(''),name,role:'teacher'};write('session',active);return {user:active};}
+  if(r==='login'){const name=String(data.code||'').trim().slice(0,40);if(!name)throw Error('请填写老师姓名');const bytes=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(name));active={id:'teacher-'+Array.from(new Uint8Array(bytes)).slice(0,10).map(x=>x.toString(16).padStart(2,'0')).join(''),name,role:'teacher'};write('session',active);return {user:active};}
   if(r==='logout'){active=null;localStorage.removeItem(prefix+'session');return {ok:true};}
-  if(!active)throw Error('请先填写老师姓名或代号');
+  if(!active)throw Error('请先填写老师姓名');
   const k=s=>active.id+':'+s, all=()=>read(k('submissions'),[]);
   if(r==='session')return {user:active};if(r==='lesson')return lesson();
   if(data?.userId&&data.userId!==active.id)throw Error('当前填写者已改变，请重新进入');
