@@ -1,0 +1,270 @@
+[
+  {
+    "id": "channels-main",
+    "name": "视频号_竖版主封面_1080x1920",
+    "kind": "cover",
+    "w": 1080,
+    "h": 1920,
+    "platform": "视频号",
+    "source": "排版源/channels-main.html",
+    "output": "封面/视频号_竖版主封面_1080x1920.png",
+    "sample": true,
+    "public": "covers/channels-main.jpg"
+  },
+  {
+    "id": "douyin-main",
+    "name": "抖音_竖版主封面_1080x1920",
+    "kind": "cover",
+    "w": 1080,
+    "h": 1920,
+    "platform": "抖音",
+    "source": "排版源/douyin-main.html",
+    "output": "封面/抖音_竖版主封面_1080x1920.png",
+    "sample": false,
+    "public": "covers/douyin-main.jpg"
+  },
+  {
+    "id": "rednote",
+    "name": "小红书_封面_1080x1440",
+    "kind": "cover",
+    "w": 1080,
+    "h": 1440,
+    "platform": "小红书",
+    "source": "排版源/rednote.html",
+    "output": "封面/小红书_封面_1080x1440.png",
+    "sample": false,
+    "public": "covers/rednote.jpg"
+  },
+  {
+    "id": "channels-grid",
+    "name": "视频号_6比7适配封面_1080x1260",
+    "kind": "cover",
+    "w": 1080,
+    "h": 1260,
+    "platform": "视频号适配",
+    "source": "排版源/channels-grid.html",
+    "output": "封面/视频号_6比7适配封面_1080x1260.png",
+    "sample": false,
+    "public": "covers/channels-grid.jpg"
+  },
+  {
+    "id": "douyin-grid",
+    "name": "抖音_3比4主页封面_1080x1440",
+    "kind": "cover",
+    "w": 1080,
+    "h": 1440,
+    "platform": "抖音主页",
+    "source": "排版源/douyin-grid.html",
+    "output": "封面/抖音_3比4主页封面_1080x1440.png",
+    "sample": false,
+    "public": "covers/douyin-grid.jpg"
+  },
+  {
+    "id": "video-h",
+    "name": "视频横版_1920x1080",
+    "kind": "watermark",
+    "w": 1920,
+    "h": 1080,
+    "use": "视频横版",
+    "source": "排版源/video-h.html",
+    "output": "透明水印/视频横版_1920x1080.png",
+    "sample": true,
+    "brand_box": [
+      54,
+      54,
+      302,
+      77
+    ],
+    "theme_box": [
+      1510,
+      889,
+      356,
+      119
+    ],
+    "opacity": 1,
+    "central_clear": true,
+    "public": "watermarks/video-h.png"
+  },
+  {
+    "id": "video-v",
+    "name": "视频竖版_1080x1920",
+    "kind": "watermark",
+    "w": 1080,
+    "h": 1920,
+    "use": "视频竖版",
+    "source": "排版源/video-v.html",
+    "output": "透明水印/视频竖版_1080x1920.png",
+    "sample": false,
+    "brand_box": [
+      54,
+      124,
+      302,
+      77
+    ],
+    "theme_box": [
+      594,
+      1511,
+      356,
+      119
+    ],
+    "opacity": 1,
+    "central_clear": true,
+    "public": "watermarks/video-v.png"
+  },
+  {
+    "id": "photo-h",
+    "name": "相机横版_6000x4000",
+    "kind": "watermark",
+    "w": 6000,
+    "h": 4000,
+    "use": "相机通用横版3:2",
+    "source": "排版源/photo-h.html",
+    "output": "透明水印/相机横版_6000x4000.png",
+    "sample": false,
+    "brand_box": [
+      140,
+      140,
+      1120,
+      285
+    ],
+    "theme_box": [
+      4540,
+      3420,
+      1320,
+      440
+    ],
+    "opacity": 1,
+    "central_clear": true,
+    "public": "watermarks/photo-h.png"
+  },
+  {
+    "id": "photo-v",
+    "name": "相机竖版_4000x6000",
+    "kind": "watermark",
+    "w": 4000,
+    "h": 6000,
+    "use": "相机通用竖版2:3",
+    "source": "排版源/photo-v.html",
+    "output": "透明水印/相机竖版_4000x6000.png",
+    "sample": true,
+    "brand_box": [
+      140,
+      140,
+      1120,
+      285
+    ],
+    "theme_box": [
+      2540,
+      5420,
+      1320,
+      440
+    ],
+    "opacity": 1,
+    "central_clear": true,
+    "public": "watermarks/photo-v.png"
+  },
+  {
+    "id": "camera-h",
+    "name": "本次相机横版_5168x3448",
+    "kind": "watermark",
+    "w": 5168,
+    "h": 3448,
+    "use": "匹配所给横版相机尺寸",
+    "source": "排版源/camera-h.html",
+    "output": "透明水印/本次相机横版_5168x3448.png",
+    "sample": false,
+    "brand_box": [
+      121,
+      121,
+      965,
+      246
+    ],
+    "theme_box": [
+      3909,
+      2948,
+      1138,
+      379
+    ],
+    "opacity": 1,
+    "central_clear": true,
+    "public": "watermarks/camera-h.png"
+  },
+  {
+    "id": "camera-v",
+    "name": "本次相机竖版_3448x5168",
+    "kind": "watermark",
+    "w": 3448,
+    "h": 5168,
+    "use": "匹配所给竖版相机尺寸",
+    "source": "排版源/camera-v.html",
+    "output": "透明水印/本次相机竖版_3448x5168.png",
+    "sample": false,
+    "brand_box": [
+      121,
+      121,
+      965,
+      246
+    ],
+    "theme_box": [
+      2189,
+      4668,
+      1138,
+      379
+    ],
+    "opacity": 1,
+    "central_clear": true,
+    "public": "watermarks/camera-v.png"
+  },
+  {
+    "id": "phone-h",
+    "name": "手机横版_4032x3024",
+    "kind": "watermark",
+    "w": 4032,
+    "h": 3024,
+    "use": "手机横版4:3",
+    "source": "排版源/phone-h.html",
+    "output": "透明水印/手机横版_4032x3024.png",
+    "sample": false,
+    "brand_box": [
+      106,
+      106,
+      847,
+      216
+    ],
+    "theme_box": [
+      2928,
+      2585,
+      998,
+      333
+    ],
+    "opacity": 1,
+    "central_clear": true,
+    "public": "watermarks/phone-h.png"
+  },
+  {
+    "id": "phone-v",
+    "name": "手机竖版_3024x4032",
+    "kind": "watermark",
+    "w": 3024,
+    "h": 4032,
+    "use": "手机竖版3:4",
+    "source": "排版源/phone-v.html",
+    "output": "透明水印/手机竖版_3024x4032.png",
+    "sample": false,
+    "brand_box": [
+      106,
+      106,
+      847,
+      216
+    ],
+    "theme_box": [
+      1920,
+      3593,
+      998,
+      333
+    ],
+    "opacity": 1,
+    "central_clear": true,
+    "public": "watermarks/phone-v.png"
+  }
+]

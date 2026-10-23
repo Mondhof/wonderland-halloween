@@ -1,0 +1,14 @@
+﻿名称,宽,高,格式,用途,文件
+视频号_竖版主封面_1080x1920,1080,1920,JPG,视频号,covers/channels-main.jpg
+抖音_竖版主封面_1080x1920,1080,1920,JPG,抖音,covers/douyin-main.jpg
+小红书_封面_1080x1440,1080,1440,JPG,小红书,covers/rednote.jpg
+视频号_6比7适配封面_1080x1260,1080,1260,JPG,视频号适配,covers/channels-grid.jpg
+抖音_3比4主页封面_1080x1440,1080,1440,JPG,抖音主页,covers/douyin-grid.jpg
+视频横版_1920x1080,1920,1080,PNG,视频横版,watermarks/video-h.png
+视频竖版_1080x1920,1080,1920,PNG,视频竖版,watermarks/video-v.png
+相机横版_6000x4000,6000,4000,PNG,相机通用横版3:2,watermarks/photo-h.png
+相机竖版_4000x6000,4000,6000,PNG,相机通用竖版2:3,watermarks/photo-v.png
+本次相机横版_5168x3448,5168,3448,PNG,匹配所给横版相机尺寸,watermarks/camera-h.png
+本次相机竖版_3448x5168,3448,5168,PNG,匹配所给竖版相机尺寸,watermarks/camera-v.png
+手机横版_4032x3024,4032,3024,PNG,手机横版4:3,watermarks/phone-h.png
+手机竖版_3024x4032,3024,4032,PNG,手机竖版3:4,watermarks/phone-v.png
