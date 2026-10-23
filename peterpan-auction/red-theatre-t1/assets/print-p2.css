@@ -1,0 +1,58 @@
+/* P2 retains the approved theatre palette and typography on the efficient P1 imposition. */
+:root{--red:#81090c;--wine:#410509;--gold:#d3b27b;--paper:#fff5df;--ink:#3c2522}
+body{background:#e9dfcb;color:var(--ink)}
+.sheet{background:var(--paper);color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.card{background:linear-gradient(112deg,#fff7e7,#f2e2c2)!important;color:var(--ink)!important}
+.display,.headtitle{font-family:"Songti SC","STSong",serif;font-style:italic;font-weight:900;letter-spacing:-.7px;color:var(--red)}
+.card h2{font-size:33px;line-height:1.3;margin-bottom:4mm}
+.card .write{color:var(--ink)}
+.blank{border-bottom-color:#aa8b65}
+.cardnote{color:#725044;font-size:11px}
+.paddle{background:linear-gradient(112deg,#53040a,#81090c 65%,#981519)!important;color:#f8e5bc!important}
+.paddle .number{font:700 64mm/1.08 "Bodoni 72","Didot",serif;letter-spacing:-2mm;color:#f8e5bc;margin:4mm 0 1mm;text-align:center}
+.paddle .numberline{font-size:18px;letter-spacing:5px;color:#f8e5bc}
+.paddle .paddlehint{color:#f8e5bc;font-size:14px;margin:6mm 0}
+.kindline{color:#8d4a34;letter-spacing:1px;font-weight:650}
+.lot h2{font-size:38px;line-height:1.3;color:var(--red)}
+.lot h2.long{font-size:32px}
+.lot .pill{background:#dfc497;color:#4d201b;padding:1.5mm 3mm;font-size:12px}
+.lot .reserve{background:#6e4933;color:#fff3d8}
+.lot .identity{color:#77533d}
+.lot .lotstats span{color:#67432e}
+.lot .lotstats b{font:700 32px "Bodoni 72","Didot",serif;color:var(--red)}
+.lot .placeholder{background:#fff9eb;border-bottom-color:#b39470;padding:2mm;color:#6e4d3b}
+.host .kindline{font-size:14px!important}
+.sectiontitle{font-size:40px;color:var(--red)}
+.intro{color:var(--ink)}
+table,table.schedule{color:var(--ink)}
+th{background:var(--red);color:#fff3d5;font-weight:600}
+td,th{border-color:#bd9f76}
+tbody tr:nth-child(even){background:#f6e8cd}
+.stat{background:#eddbb6;padding:4mm 2mm}
+.stat strong{font:700 32px/1.3 "Bodoni 72","Didot",serif;color:var(--red)}
+.stat small{color:#664329}
+.rulesblock{border-top-color:#ceb183;color:var(--ink)}
+.rulesblock b{color:var(--red)}
+.sign{background:linear-gradient(112deg,#53040a,#81090c 65%,#981519)!important;color:#f8e5bc}
+.sign .signcopy{padding:7mm 10mm}
+.sign h1{font:italic 900 106px/1.22 "Songti SC","STSong",serif;color:#f8e5bc;letter-spacing:0;margin:0 0 10mm}
+.sign p{color:#f8e5bc}
+.sign p.zone-name{font-size:22px;font-weight:500;letter-spacing:3px;margin-bottom:9mm;color:#e1bb82}
+.zone{background:#f0ddb5;border-color:#b89a6c;color:var(--ink)}
+.zone.stage{background:var(--red);color:#fff0cd}
+.zone.cash{background:#e1c28e;color:#46271d}
+.zone.parents{background:#ead5ac}
+.seatgrid span{border-color:#bea073;color:#64402e}
+.setupnote{color:var(--ink)}
+.bag h3{font:italic 900 38px/1.3 "Songti SC","STSong",serif;color:var(--red);margin:3mm 0 7mm}
+.bag p{color:var(--ink)}
+.coupon{background:#f6e5c1;border-color:#bda17a;color:var(--ink)}
+.coupon .cname{font:italic 800 12px/1.3 "Songti SC","STSong",serif;color:var(--red)}
+.coupon .face{font:700 11mm/1 "Bodoni 72","Didot",serif;color:var(--red);top:3mm}
+.coupon .unit{top:16mm;color:var(--red)}
+.coupon .sub{color:#6c4935}
+.coupon[data-face="10"]{background:#81090c;border-color:#b38360}
+.coupon[data-face="10"] .face,.coupon[data-face="10"] .unit,.coupon[data-face="10"] .cname,.coupon[data-face="10"] .sub{color:#fff0ce}
+.coupon[data-face="5"]{background:#e5c48d}
+.coupon[data-face="1"]{background:#fff4db}
+@media print{.sheet,.card,.coupon{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}
