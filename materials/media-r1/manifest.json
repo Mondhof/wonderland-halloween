@@ -9,6 +9,8 @@
     "source": "排版源/channels-main.html",
     "output": "封面/视频号_竖版主封面_1080x1920.png",
     "sample": true,
+    "revision": "R2",
+    "extra_brand_name": false,
     "public": "covers/channels-main.jpg"
   },
   {
@@ -21,6 +23,8 @@
     "source": "排版源/douyin-main.html",
     "output": "封面/抖音_竖版主封面_1080x1920.png",
     "sample": false,
+    "revision": "R2",
+    "extra_brand_name": false,
     "public": "covers/douyin-main.jpg"
   },
   {
@@ -33,6 +37,8 @@
     "source": "排版源/rednote.html",
     "output": "封面/小红书_封面_1080x1440.png",
     "sample": false,
+    "revision": "R2",
+    "extra_brand_name": false,
     "public": "covers/rednote.jpg"
   },
   {
@@ -45,6 +51,8 @@
     "source": "排版源/channels-grid.html",
     "output": "封面/视频号_6比7适配封面_1080x1260.png",
     "sample": false,
+    "revision": "R2",
+    "extra_brand_name": false,
     "public": "covers/channels-grid.jpg"
   },
   {
@@ -57,6 +65,8 @@
     "source": "排版源/douyin-grid.html",
     "output": "封面/抖音_3比4主页封面_1080x1440.png",
     "sample": false,
+    "revision": "R2",
+    "extra_brand_name": false,
     "public": "covers/douyin-grid.jpg"
   },
   {
@@ -73,7 +83,7 @@
       54,
       54,
       302,
-      77
+      42
     ],
     "theme_box": [
       1510,
@@ -83,6 +93,8 @@
     ],
     "opacity": 1,
     "central_clear": true,
+    "revision": "R2",
+    "extra_brand_name": false,
     "public": "watermarks/video-h.png"
   },
   {
@@ -99,7 +111,7 @@
       54,
       124,
       302,
-      77
+      42
     ],
     "theme_box": [
       594,
@@ -109,6 +121,8 @@
     ],
     "opacity": 1,
     "central_clear": true,
+    "revision": "R2",
+    "extra_brand_name": false,
     "public": "watermarks/video-v.png"
   },
   {
@@ -125,7 +139,7 @@
       140,
       140,
       1120,
-      285
+      157
     ],
     "theme_box": [
       4540,
@@ -135,6 +149,8 @@
     ],
     "opacity": 1,
     "central_clear": true,
+    "revision": "R2",
+    "extra_brand_name": false,
     "public": "watermarks/photo-h.png"
   },
   {
@@ -151,7 +167,7 @@
       140,
       140,
       1120,
-      285
+      157
     ],
     "theme_box": [
       2540,
@@ -161,6 +177,8 @@
     ],
     "opacity": 1,
     "central_clear": true,
+    "revision": "R2",
+    "extra_brand_name": false,
     "public": "watermarks/photo-v.png"
   },
   {
@@ -177,7 +195,7 @@
       121,
       121,
       965,
-      246
+      136
     ],
     "theme_box": [
       3909,
@@ -187,6 +205,8 @@
     ],
     "opacity": 1,
     "central_clear": true,
+    "revision": "R2",
+    "extra_brand_name": false,
     "public": "watermarks/camera-h.png"
   },
   {
@@ -203,7 +223,7 @@
       121,
       121,
       965,
-      246
+      136
     ],
     "theme_box": [
       2189,
@@ -213,6 +233,8 @@
     ],
     "opacity": 1,
     "central_clear": true,
+    "revision": "R2",
+    "extra_brand_name": false,
     "public": "watermarks/camera-v.png"
   },
   {
@@ -229,7 +251,7 @@
       106,
       106,
       847,
-      216
+      119
     ],
     "theme_box": [
       2928,
@@ -239,6 +261,8 @@
     ],
     "opacity": 1,
     "central_clear": true,
+    "revision": "R2",
+    "extra_brand_name": false,
     "public": "watermarks/phone-h.png"
   },
   {
@@ -255,7 +279,7 @@
       106,
       106,
       847,
-      216
+      119
     ],
     "theme_box": [
       1920,
@@ -265,6 +289,8 @@
     ],
     "opacity": 1,
     "central_clear": true,
+    "revision": "R2",
+    "extra_brand_name": false,
     "public": "watermarks/phone-v.png"
   }
 ]
