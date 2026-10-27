@@ -1,0 +1,52 @@
+[
+  {
+    "file": "device-check.mp3",
+    "sourceStart": 0,
+    "sourceEnd": 5,
+    "seconds": 5,
+    "sha256": "d4bfc53419e267de4e58c057f3bc91f12368fbf17b7201702cae08e05146c65b",
+    "rate": 1,
+    "source": "Cambridge B1 official listening sample",
+    "note": "原音连续切段，未放慢或合成；native-context为含目标回答的上下文段，非逐句对齐。"
+  },
+  {
+    "file": "b1-part4.mp3",
+    "sourceStart": 1426.3,
+    "sourceEnd": 1825,
+    "seconds": 398.7,
+    "sha256": "a1fdfafc2ec9e538739853dcedce97ad52111b881cafd03c9f4009ed334dcdd5",
+    "rate": 1,
+    "source": "Cambridge B1 official listening sample",
+    "note": "原音连续切段，未放慢或合成；native-context为含目标回答的上下文段，非逐句对齐。"
+  },
+  {
+    "file": "b1-q10.mp3",
+    "sourceStart": 800.4,
+    "sourceEnd": 882.3,
+    "seconds": 81.9,
+    "sha256": "9402ce868cdd4012c2c60a94d3effce517abdae4ed8105cdcecb20f6f4faf023",
+    "rate": 1,
+    "source": "Cambridge B1 official listening sample",
+    "note": "原音连续切段，未放慢或合成；native-context为含目标回答的上下文段，非逐句对齐。"
+  },
+  {
+    "file": "b1-q11.mp3",
+    "sourceStart": 882.4,
+    "sourceEnd": 966.9,
+    "seconds": 84.5,
+    "sha256": "5b07f79f67819d6d4cda47cfde536a9aba389d365c43e2cbfdc50da96624dbcf",
+    "rate": 1,
+    "source": "Cambridge B1 official listening sample",
+    "note": "原音连续切段，未放慢或合成；native-context为含目标回答的上下文段，非逐句对齐。"
+  },
+  {
+    "file": "native-context.mp3",
+    "sourceStart": 628.9,
+    "sourceEnd": 711.4,
+    "seconds": 82.5,
+    "sha256": "329b1b0d89d26648b9febdfadcba123051cca946f626e6480867b1d9bf5610cf",
+    "rate": 1,
+    "source": "Cambridge B1 official listening sample",
+    "note": "原音连续切段，未放慢或合成；native-context为含目标回答的上下文段，非逐句对齐。"
+  }
+]
