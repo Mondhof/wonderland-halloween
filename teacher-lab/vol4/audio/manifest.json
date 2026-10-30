@@ -1,0 +1,82 @@
+[
+ {
+  "file": "device-check.mp3",
+  "sourceStart": 0,
+  "sourceEnd": 5,
+  "seconds": 5,
+  "sha256": "d4bfc53419e267de4e58c057f3bc91f12368fbf17b7201702cae08e05146c65b",
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary handbook for teachers listening audio (505234)",
+  "note": "官方原音连续切段，未放慢或合成。听力题从报题号起到第二遍结束；model-shop为Part 2 Q8上下文与女生回答目标段，供左丽慧跟练。"
+ },
+ {
+  "file": "b1-q9.mp3",
+  "sourceStart": 705.2,
+  "sourceEnd": 789.7,
+  "seconds": 84.5,
+  "sha256": "f633b41752aa76c185078dc096af4468b718fc65d6cf79d413f2488ee7633587",
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary handbook for teachers listening audio (505234)",
+  "note": "官方原音连续切段，未放慢或合成。听力题从报题号起到第二遍结束；model-shop为Part 2 Q8上下文与女生回答目标段，供左丽慧跟练。"
+ },
+ {
+  "file": "b1-q10.mp3",
+  "sourceStart": 794.1,
+  "sourceEnd": 872.8,
+  "seconds": 78.7,
+  "sha256": "6c85522b33a50e36a1228a54ca2fe8f67ab7d2f9f690721c7e99e1ced9b9e494",
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary handbook for teachers listening audio (505234)",
+  "note": "官方原音连续切段，未放慢或合成。听力题从报题号起到第二遍结束；model-shop为Part 2 Q8上下文与女生回答目标段，供左丽慧跟练。"
+ },
+ {
+  "file": "b1-q11.mp3",
+  "sourceStart": 877.2,
+  "sourceEnd": 957.3,
+  "seconds": 80.1,
+  "sha256": "b9bdf5791971f1527e4af6bbb562f082bcc601ae0b7934bc721f11d7f360bb99",
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary handbook for teachers listening audio (505234)",
+  "note": "官方原音连续切段，未放慢或合成。听力题从报题号起到第二遍结束；model-shop为Part 2 Q8上下文与女生回答目标段，供左丽慧跟练。"
+ },
+ {
+  "file": "b1-q12.mp3",
+  "sourceStart": 961.7,
+  "sourceEnd": 1028.7,
+  "seconds": 67.0,
+  "sha256": "b98da57c82ecce131ac46386b5083446ddb5b3827c751197bd6a08b694fccacf",
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary handbook for teachers listening audio (505234)",
+  "note": "官方原音连续切段，未放慢或合成。听力题从报题号起到第二遍结束；model-shop为Part 2 Q8上下文与女生回答目标段，供左丽慧跟练。"
+ },
+ {
+  "file": "b1-q13.mp3",
+  "sourceStart": 1033.1,
+  "sourceEnd": 1113.9,
+  "seconds": 80.8,
+  "sha256": "224c46ba1438f3b0efaff001aa2a90f3f6621c8bed74df0d5519a22b4fd7817b",
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary handbook for teachers listening audio (505234)",
+  "note": "官方原音连续切段，未放慢或合成。听力题从报题号起到第二遍结束；model-shop为Part 2 Q8上下文与女生回答目标段，供左丽慧跟练。"
+ },
+ {
+  "file": "model-shop-context.mp3",
+  "sourceStart": 620.2,
+  "sourceEnd": 660.3,
+  "seconds": 40.1,
+  "sha256": "4e615c412e0b7c275cc1492591dbe62ce13c57cc818214e63eae62e91f08f46f",
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary handbook for teachers listening audio (505234)",
+  "note": "官方原音连续切段，未放慢或合成。听力题从报题号起到第二遍结束；model-shop为Part 2 Q8上下文与女生回答目标段，供左丽慧跟练。"
+ },
+ {
+  "file": "model-shop-target.mp3",
+  "sourceStart": 640.35,
+  "sourceEnd": 655.2,
+  "seconds": 14.85,
+  "sha256": "3e3ada97b12beba09ed8778b370867f5f1f7c682397858503e16ea82d670b73b",
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary handbook for teachers listening audio (505234)",
+  "note": "官方原音连续切段，未放慢或合成。听力题从报题号起到第二遍结束；model-shop为Part 2 Q8上下文与女生回答目标段，供左丽慧跟练。"
+ }
+]
