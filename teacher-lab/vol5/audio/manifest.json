@@ -1,0 +1,89 @@
+[
+ {
+  "file": "device-check.mp3",
+  "sourceStart": 0,
+  "sourceEnd": 5,
+  "seconds": 5,
+  "sha256": "d4bfc53419e267de4e58c057f3bc91f12368fbf17b7201702cae08e05146c65b",
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary handbook for teachers listening audio (505234)",
+  "note": "沿用Vol.4试音段。"
+ },
+ {
+  "file": "b1-q1.mp3",
+  "sourceStart": 44.0,
+  "sourceEnd": 125.0,
+  "seconds": 81.0,
+  "sha256": "150617c44d34fdadb321f88a098a94fc3e813ced3c27072b89a49ad107a985f6",
+  "bytes": 972739,
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary handbook for teachers listening audio (505234)",
+  "note": "Part 1 官方原音连续切段，未放慢或合成；从报题号起到第二遍结束。Vol.1–4未用过Part 1。"
+ },
+ {
+  "file": "b1-q2.mp3",
+  "sourceStart": 125.3,
+  "sourceEnd": 197.5,
+  "seconds": 72.2,
+  "sha256": "741bc2175d116d88dace78a3d4e092a74a758b0bec23ff66d9d84f4f0aff6a4a",
+  "bytes": 867100,
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary handbook for teachers listening audio (505234)",
+  "note": "Part 1 官方原音连续切段，未放慢或合成；从报题号起到第二遍结束。Vol.1–4未用过Part 1。"
+ },
+ {
+  "file": "b1-q3.mp3",
+  "sourceStart": 197.6,
+  "sourceEnd": 274.2,
+  "seconds": 76.6,
+  "sha256": "c654ec80d3c22203527f60806858102a93ca433a4c4eaca9c190df15014b8dad",
+  "bytes": 920076,
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary handbook for teachers listening audio (505234)",
+  "note": "Part 1 官方原音连续切段，未放慢或合成；从报题号起到第二遍结束。Vol.1–4未用过Part 1。"
+ },
+ {
+  "file": "b1-q4.mp3",
+  "sourceStart": 274.3,
+  "sourceEnd": 353.5,
+  "seconds": 79.2,
+  "sha256": "68e948aa71974114c163207b3b2e0cd7b83ba663369865eb192783023a540563",
+  "bytes": 951110,
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary handbook for teachers listening audio (505234)",
+  "note": "Part 1 官方原音连续切段，未放慢或合成；从报题号起到第二遍结束。Vol.1–4未用过Part 1。"
+ },
+ {
+  "file": "b1-q5.mp3",
+  "sourceStart": 353.5,
+  "sourceEnd": 438.5,
+  "seconds": 85.0,
+  "sha256": "efcf052f86daeae9771fe975e23904c836058c400ae06be97eac7cfd18b6a704",
+  "bytes": 1020700,
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary handbook for teachers listening audio (505234)",
+  "note": "Part 1 官方原音连续切段，未放慢或合成；从报题号起到第二遍结束。Vol.1–4未用过Part 1。"
+ },
+ {
+  "file": "b1-q6.mp3",
+  "sourceStart": 438.5,
+  "sourceEnd": 508.3,
+  "seconds": 69.8,
+  "sha256": "b523d8d68b9676b11f742b3900b783e5cd4d5a8a4c7e17ec3630616d046be3ec",
+  "bytes": 838574,
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary handbook for teachers listening audio (505234)",
+  "note": "Part 1 官方原音连续切段，未放慢或合成；从报题号起到第二遍结束。Vol.1–4未用过Part 1。"
+ },
+ {
+  "file": "b1-q7.mp3",
+  "sourceStart": 508.4,
+  "sourceEnd": 594.3,
+  "seconds": 85.9,
+  "sha256": "fd169b68d8cece43117d37c2814815fe95d82bd78ed0e770492198b4944c38be",
+  "bytes": 1031671,
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary handbook for teachers listening audio (505234)",
+  "note": "Part 1 官方原音连续切段，未放慢或合成；从报题号起到第二遍结束。Vol.1–4未用过Part 1。"
+ }
+]
