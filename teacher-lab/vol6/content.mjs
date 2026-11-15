@@ -1,186 +1,169 @@
-export const VERSION = "2026-11-19.vol6.v1";
+export const VERSION = "2026-11-19.vol6.v2";
 export const META = {
- vol:"Vol.6", prefix:"wl-vol6-v1:", db:"wonderland-vol6-audio-v1", cache:"wonderland-vol6-audio-cache-v1",
+ vol:"Vol.6", reviewer:"刘老师", prefix:"wl-vol6-v2:", db:"wonderland-vol6-v2", cache:"wonderland-vol6-cache-v2",
  format:"wonderland-teacher-vol6-response", fileTag:"温德兰_Vol.6",
- flow:"一次做完：听力50 → 改错句20<br>→ 限时判断10 → 试讲40 → 交卷",
- submitHint:"下载后，把文件发到英语部群，再在自己的文件消息下面 @月神。个人反馈只会私聊你本人。",
- exportNotice:"答卷保存在当前浏览器，不自动上传。四段分开计时、分开锁定；缺项标未完成。听力依据、改写句子和录音由人工复核，不换算官方等级。",
+ flow:"一次做完：看懂好坏10 → 写指令20<br>→ 用AI做练习单60 → 按标准核对20 → 交卷",
+ submitHint:"下载后，把答卷文件和练习单成品（PDF或截图）一起发到英语部群，再在自己的文件消息下面 @月神。刘老师看完会改，改好再发给孩子。",
+ exportNotice:"答卷保存在当前浏览器，不自动上传。四段分开计时、分开锁定；③允许并要求用AI，粘贴记录照常保留。练习单成品由刘玥审改后才发给学生。",
  home:{
-  eyebrow:"VOL.6 · 难度加一档：自己听出来、自己说对、自己讲完整",
-  title:"选择题已经难不住你了，<br>这次看你做不做得出来。",
+  eyebrow:"VOL.6 · 用AI给自己班这周的课做一份学生练习单",
+  title:"AI写得出来不算数，<br>孩子拿到能做、家长看得懂才算。",
   planTitle:"一次做完，2小时，分四段",
   cards:[
-   {h:"这次比Vol.5难在哪", ps:["听力换成剑桥B1青少版，Vol.1—5都没用过。Part 2 三个选项对话里都会说到，要听清两个人最后认同的是什么；Part 3 没有选项，自己写词。","选择型听力每题要写决定答案的那句原话，还要写你差点选的那个为什么不对。","改错的句子全是你自己在Vol.4、Vol.5录音里说过的。","课堂判断限时10分钟，到点自动锁定。","试讲从90秒加到3—5分钟，用你教案里11月21日那节课的目标句型。"]},
-   {h:"自己做", ps:["不看笔记、不用AI、不用翻译、不问别人。这一卷看的是你自己的真实水平。","学校网络慢：开始①之前，一定先点「下载音频」，7段全部下载完再开始。","做④之前，先打开你班的「2026秋季教学计划及教案」，找到11月21日（周六）那节课。"]}
+   {h:"这次要交什么", ps:["给自己一个班这周末（11月21—22日）那节课做一份学生练习单：Power Up 的词和句，按孩子的年龄出题，A4一页，附答案。","AI的过程也要交：每一轮发给AI的话、AI最后一版原稿、你自己动手改了哪些地方。","交上来以后刘老师会看、会改，改好了再发给孩子。"]},
+   {h:"开始前准备好", ps:["一台能上网、能用AI的电脑，你平时用哪个AI就用哪个。","这周那节课的 Power Up 课本：书带来，或者把那几页拍好照片。","你班的「2026秋季教学计划及教案」，打开到这周那节课。","①②④自己做，不用AI；只有③用AI。"]}
   ]
  },
  guide:[
-  ["2小时怎么做",["① 听力50分钟：Part 2 六题，每题先读题和三个选项，再播放，选完写依据；Part 3 先读完6个空，再播放，听到就写。","② 改错20分钟：每句先判断有没有错，再在下面写改好的整句；没问题写「不用改」。","③ 限时判断10分钟：点开始就倒计时，到点自动锁定。","④ 试讲40分钟：先填11/21的课，再写3个问题和孩子卡住时你给的开头，最后连续录3—5分钟。"]],
-  ["音频",["一定先点「先把本段音频下载到这台电脑」，等它显示「已全部下载」再开始。下载过一次，刷新页面也不用重下。","还是放不出来：勾「播放故障」，在英语部群里@月神，不要猜着选。"]],
-  ["录音",["用电脑Chrome常规窗口打开本页，允许麦克风。试讲最长5分钟，不到3分钟算没完成。录完点「停止并保存」，再试听一遍。也可以上传已有音频。"]],
-  ["交卷",["在「交卷」里回答3个问题，看缺项，下载答卷。把文件发到英语部群，再在自己的文件消息下 @月神。网页不会自动上传。"]]
+  ["2小时怎么做",["① 看懂好坏10分钟：看一份AI做坏了的练习单，判断10处要不要改。","② 写指令20分钟：把班级、孩子、家长、这节课的词句、题型填进去，页面会自动拼成一段完整的指令。","③ 用AI做练习单60分钟：把指令发给AI，至少改2轮；每轮记下你发的话和这一版哪里不行；最后贴上AI原稿，写清你自己改了什么，把成品存成飞书文档。","④ 按标准核对20分钟：10条逐条核对，有问题当场改；再写这份练习单周末怎么用。"]],
+  ["成品放哪",["练习单存成飞书文档，分享设成「组织内获得链接的人可阅读」，把链接贴进③。另外导出PDF或截图，和答卷一起发英语部群。"]],
+  ["交上来以后",["刘老师看完会改，改好的版本再打印发给孩子。周末上完课，在本班教案那节课的「课后复盘」写：哪道题孩子做得最吃力，下次怎么改。"]],
+  ["交卷",["在「交卷」里回答3个问题，看缺项，下载答卷。答卷和练习单成品一起发英语部群，再在自己的文件消息下 @月神。"]]
  ]
 };
-export const MODES = [["listen","① 听力"],["fix","② 改自己说错的句子"],["judge","③ 限时课堂判断"],["teach","④ 11/21的课试讲"]];
+export const MODES = [["spot","① 看懂好坏"],["prompt","② 写指令"],["make","③ 用AI做练习单"],["check","④ 按标准核对"]];
 export const PROFILES = {
- he: {name:"何静", focus:"这次重点：孩子卡住时只给开头、不给整句；has / have、单三这些要说对。②里的句子都是你自己录音里说过的。"},
- zuo: {name:"左丽慧", focus:"这次重点：听力每题先写出决定答案的那句原话再选；试讲全程用你教案里周六的目标句型。②里的句子都是你自己录音里说过的。"}
+ he: {name:"何静", focus:"你11月6日交的AI教案、课后反馈和作业表，班名、学生、作业渠道都还写着「待补」。这次给AI真信息，拿到先核对，成品里不许出现「待补」。你提的「AI做课后练习」，就从这一份开始。"},
+ zuo: {name:"左丽慧", focus:"你11月6日交的AI教案，标题写的是「PU0 Lesson 22」，班级写「待补」，可你带的是L1-A班。这次给AI真信息，拿到先核对，成品里不许出现「待补」。"}
 };
 export const SESSION = {
  totalMinutes: 120,
- window: "11月19日（周四）下午在校区做：14:00开始，连续2小时一次做完，16:00前交。手机收起来，不看笔记，不用AI、不用翻译。",
+ window: "11月19日（周四）下午在校区：14:00开始，连续2小时，16:00前交。带能用AI的电脑，带上这周那节课的 Power Up 课本。",
  phases: [
-  {title:"① 听力", minutes:50, detail:"剑桥B1青少版 Part 2 六题（每题写原话依据和排除理由）＋ Part 3 六个空（自己写词）", evidence:"原答、依据和播放次数"},
-  {title:"② 改自己说错的句子", minutes:20, detail:"9句，全部来自你自己Vol.4、Vol.5的录音：先判断有没有错，再写改好的整句", evidence:"判断和改写"},
-  {title:"③ 限时课堂判断", minutes:10, detail:"10道情境题，倒计时10分钟，到点自动锁定", evidence:"原答和用时"},
-  {title:"④ 11/21的课试讲", minutes:40, detail:"填11/21真实的课 → 写3层问题和给的开头 → 连续试讲3—5分钟 → 回听自评", evidence:"备课、试讲录音和自评"},
-  {title:"交卷", minutes:5, detail:"3个问题，自查缺项，下载答卷", evidence:"答卷发英语部群并@月神"}
+  {title:"① 看懂好坏", minutes:10, detail:"看一份AI做坏的练习单，10处判断要不要改（不用AI）", evidence:"原答"},
+  {title:"② 写指令", minutes:20, detail:"填班级、孩子、家长、这节课的词句、题型和成品要求，自动拼成指令（不用AI）", evidence:"指令全文"},
+  {title:"③ 用AI做练习单", minutes:60, detail:"把指令发给AI，至少改2轮；交每轮记录、AI原稿、自己的修改和成品链接", evidence:"过程记录和成品"},
+  {title:"④ 按标准核对", minutes:20, detail:"按10条标准逐条核对并当场改；写周末怎么用（不用AI）", evidence:"核对记录"},
+  {title:"交卷", minutes:10, detail:"3个问题，自查缺项，下载答卷，成品一起发群", evidence:"答卷和练习单发英语部群并@月神"}
  ]
 };
 export const SOURCES = {
- listening: "听力：Cambridge B1 Preliminary for Schools 教师手册样卷 Listening Part 2（Q8–13）、Part 3（Q14–19）；官方真人录音，1.0倍，每段自带两遍。答案以手册官方答案页为准。Vol.1—5用的是成人版手册，这一套没用过。",
- listeningPaper: "https://www.cambridgeenglish.org/Images/168143-cambridge-english-preliminary-for-schools-teachers-handbook.pdf",
- audio: "https://www.cambridgeenglish.org/Images/709695-b1-preliminary-for-schools-handbook-for-teachers-listening-audio-files.mp3",
- fix: "改错：句子摘自两位老师Vol.4（11月4—5日）、Vol.5（11月12—13日）试讲和口语录音的转写，只去掉了嗯、啊，没有改词。",
- training: "课堂判断按南宁师训（Alice、Emily）讲的做法和Vol.4、Vol.5里两位老师反复错的地方出题。",
- note: "本卷为分人诊断。选择题和填空按答案判；依据、改写、录音由月神人工复核。不换算官方等级，不做两人排名。"
+ training: "做法依据：刘玥《我是如何用AI+飞书帮我备课和课后服务》——AI不知道你的学生和校区，要补齐「备内容、备学生、备家长」；不满意就告诉AI你要什么，别复制完就走；做好的东西存进飞书。南宁师训Emily：先想清楚要什么成品再描述给AI，学生用的练习单不能混老师话术，AI初稿要反复改。",
+ standard: "练习单标准按 Power Up Starter（PU0）、Power Up 1 的实际进度和4—8岁孩子定，不按校内考试题型出。",
+ note: "①是选择题，自动判；②③④和练习单成品由刘玥人工看，改好再发给孩子。不排名。"
 };
 export const REFLECT = [
- {id:"r1", label:"最难", prompt:"这次四段里，哪一段最难？难在哪？"},
- {id:"r2", label:"自己的错", prompt:"②里你自己的句子，最常错的是哪一类（比如单三、语序、中式说法）？"},
- {id:"r3", label:"下周五", prompt:"下周五要用AI做一份学生练习单，你打算给哪个班、哪一课做？"}
+ {id:"r1", label:"最帮忙", prompt:"这次AI哪一步最帮到你？"},
+ {id:"r2", label:"最不靠谱", prompt:"AI哪里最不靠谱？你是怎么发现的？"},
+ {id:"r3", label:"最没把握", prompt:"这份练习单你自己最没把握的是哪一题？希望刘老师帮你看哪里？"}
 ];
 
-// ---------- ① 听力 ----------
-const EV = "先写决定答案的那句原话（英文，听到几个词写几个词）；再写你差点选的那个选项，录音里为什么不对（中文一句）。没听清就写「没听清」。";
-const SRC = n => `Cambridge B1 Preliminary for Schools handbook sample, Listening Q${n}`;
-const P2 = [
- {n:8, prompt:"8. Two friends are talking about a campsite they have been to. What did the boy like best about it?", options:["It was very close to the beach.","There were lots of people his age.","The activities were free."], answer:1,
-  explanation:"答案B。女孩说 I started hanging out with loads of other teenagers，男孩接 That's why I'd go back any day – in other camps you don't get that sort of crowd。海滩是女孩说的；男孩自己说 The pool's good enough for me；活动收不收费没说。"},
- {n:9, prompt:"9. Two friends are talking about homework. The girl thinks that doing homework with friends…", options:["is fun.","helps concentration.","takes longer than doing it alone."], answer:0,
-  explanation:"答案A。男孩说 having a few laughs and some jokes，女孩说 That's exactly it。concentrate 是她说「要专心的科目最好自己做」，正好反着；时间是 half the time，更快，不是更慢。"},
- {n:10, prompt:"10. A boy is telling his friend about a rock-climbing trip. How did he feel about it?", options:["grateful for the help he got","satisfied with his climbing","hopeful of going again"], answer:2,
-  explanation:"答案C。I'm looking forward to having another try。help 是他说下次要告诉同伴 I need support，不是感谢这次的帮助；pleased with the way I've climbed 说的是室内攀岩墙，不是这次的真山。"},
- {n:11, prompt:"11. Two friends are talking about learning to play the guitar. The girl advises the boy to…", options:["practise more often.","play in a variety of styles.","listen to the best guitarists."], answer:2,
-  explanation:"答案C。you ought to pay attention to the really top players… Just notice how they do things。练习：她说 I don't see how you could do much more；风格：她建议 focus on one type，跟B正相反。"},
- {n:12, prompt:"12. Two friends are talking about a book they've read. They agree that it has…", options:["lots of action.","realistic characters.","an unexpected ending."], answer:1,
-  explanation:"答案B。女孩说 Alan's personality seems really true to life，男孩接 it reminds me of my mum and me。action 只是男孩说，女孩说 it does get slower in the middle；结局男孩觉得意外，女孩说 I kind of thought that might happen，没认同。"},
- {n:13, prompt:"13. Two friends are talking about a concert they've been to. They agree that…", options:["the organisation was poor.","the performance was good.","the tickets were expensive."], answer:2,
-  explanation:"答案C。男孩 if you think what we paid to get in，女孩 it was definitely more than I'd normally be willing to pay，两人都嫌贵。组织：女孩说 Don't blame the organisers；表演：男孩嫌没唱成名曲，只有女孩说 I liked what they did。"}
-].map(x => ({id:"s"+x.n, label:"听力Q"+x.n, part:"P2", type:"choice", letters:true, audio:"s-q"+x.n, prompt:x.prompt, options:x.options, answer:x.answer, evidencePrompt:EV, explanation:x.explanation, source:SRC(x.n), skill:"听观点"}));
-const P3 = [
- {n:14, prompt:"Phil's first job after university was on local (14) ______.", accept:["radio","local radio"], explanation:"答案 radio。原话 first in radio in my home city and then as a journalist on a magazine。first 后面的才是第一份；magazine 是第二份。"},
- {n:15, prompt:"Before presenting the news, Phil looks through the day's (15) ______.", accept:["newspapers","newspaper","news papers","news paper","papers","paper"], explanation:"答案 newspapers。原话 First I get the newspapers and go through each one carefully。和编辑开会是看完报纸以后的事。"},
- {n:16, prompt:"Phil says that he's very careful about which (16) ______ he wears.", accept:["jacket","jackets"], explanation:"答案 jacket。choosing the right jacket to put on；trousers 和 shoes 他说不用操心，镜头拍不到。"},
- {n:17, prompt:"Phil sometimes finds the names of some (17) ______ difficult to say correctly.", accept:["people","person","persons"], explanation:"答案 people。cities or countries 他说一般不出错；it's names of people which I sometimes find a real challenge。"},
- {n:18, prompt:"Phil enjoys presenting news on the topic of (18) ______.", accept:["business"], explanation:"答案 business。I really enjoy business；politics、fashion 是他同事喜欢的。"},
- {n:19, prompt:"Phil would like to be a (19) ______ in the future.", accept:["producer","tv producer"], explanation:"答案 producer。别人说他能当 actor，他 never been attracted by that；从小想当 producer，现在仍想。"}
-].map(x => ({id:"s"+x.n, label:"填空Q"+x.n, part:"P3", type:"gap", prompt:x.prompt, accept:x.accept, placeholder:"一到两个英文单词", explanation:x.explanation, source:SRC(x.n), skill:"听细节写词"}));
-const AUDIO = [[8,93.4],[9,72.7],[10,78.7],[11,87.9],[12,89.1],[13,87.8]].map(([n,s]) => ({id:"s-q"+n, title:`剑桥B1青少版 Part 2 · Q${n}`, url:`./audio/s-q${n}.mp3`, end:s}))
- .concat([{id:"s-p3", title:"剑桥B1青少版 Part 3 · Q14–19（一段，自带两遍，约4分钟）", url:"./audio/s-p3.mp3", end:240.0}]);
+// ---------- ① 看懂好坏 ----------
+const SHEET = `【示例：AI做的第一版原稿，班级是虚构的】
 
-// ---------- ② 改自己说错的句子 ----------
-const FIXOPT = ["这句没问题","这句有错，要改"];
-const fixItem = (id, context, prompt, answer, explanation) => ({id, type:"choice", group:"fix", skill:"改错", fix:true, context, prompt, options:FIXOPT, answer, explanation});
-const FIX_HE = [
- fixItem("h1","Vol.5 试讲，放录音前对孩子说","Now listen the video and order them order.",1,"有错。参考：Now listen and put the pictures in order. listen 后面要么不接宾语，要么 listen to；排序说 put … in order。"),
- fixItem("h2","Vol.5 试讲，给孩子听的问题","Listen and find out how many books does Jenny have.",1,"有错。参考：Listen and find out how many books Jenny has.（find out 后面用陈述语序）或者分开说：Listen and find out: How many books has Jenny got?"),
- fixItem("h3","Vol.5 试讲，问逻辑题","Why do Jenny haven't pencils? How do you know?",1,"有错。参考：Why hasn't Jenny got any pencils? How do you know? 主语是 Jenny（单数），否定问句用 hasn't … got any。"),
- fixItem("h4","Vol.5 试讲，给孩子示范","Jenny have got five books.",1,"有错。参考：Jenny has got five books. 主语单数用 has。这是你这学期在课上最该盯死的句型，自己先说对。"),
- fixItem("h5","Vol.5 试讲，表扬孩子","Okay, clap for you.",1,"有错，中式说法。参考：Well done, Kim! Let's give Kim a big clap!"),
- fixItem("h6","Vol.5 试讲，请孩子再试一次","Can you try one more time, Kim?",0,"没问题。"),
- fixItem("h7","Vol.4 开口基线，让孩子藏卡片","Hide your card. Don't show your partner.",0,"没问题。"),
- fixItem("h8","Vol.4 停下来重讲，叫孩子看示范","Look at me. Watch me and Lily.",0,"没问题。"),
- fixItem("h9","Vol.5 试讲：孩子答不上 How many books has Jenny got?，你说（语法已经替你改对了，看做法）","Follow me. Jenny has got five books.",1,"做法有错。孩子卡住时你把整句答案说了，孩子只是跟读。参考：Jenny has got…?（停下来，等他接 five books），接上了再换一张图让他自己说。")
-];
-const FIX_ZUO = [
- fixItem("z1","Vol.4 跟同事说为什么选这个玩法","Everyone get a turn.",1,"有错。参考：Everyone gets a turn. everyone 当单数，动词加 -s。"),
- fixItem("z2","Vol.4 跟同事说为什么选这个玩法","And the secret card make it feel like a cool game.",1,"有错。参考：And the secret card makes it feel like a cool game. 主语 the secret card 是单数。"),
- fixItem("z3","Vol.4 新玩法，换规则后的检查问题（两次录音都这样说）","After the new rule, who say \"I'm swimming\"?",1,"有错。参考：After the new rule, who says \"I'm swimming\"? who 作主语，动词用单三。"),
- fixItem("z4","Vol.4 新玩法，讲新规则","Then point to a friend and then friend must say sentence out loudly.",1,"有错。参考：Then point to a friend, and that friend must say the sentence out loud. 要有 that / the；out loud 不说 out loudly。"),
- fixItem("z5","Vol.4 另一个新玩法，讲规则","If partner say no, try another word.",1,"有错。参考：If your partner says no, try another word. 要有 your；partner 单数，says。"),
- fixItem("z6","Vol.4 新玩法开头","Okay, everyone, stay in your circle.",0,"没问题。"),
- fixItem("z7","Vol.5 试讲，让孩子说完整","Tell me the whole sentence.",0,"没问题。"),
- fixItem("z8","Vol.4 新玩法，规则检查问题","Does Mia show the card or only act?",0,"没问题。"),
- fixItem("z9","Vol.5 试讲：你填的周六目标句型是 What are you doing? — I'm …ing.，试讲时你问的是（看做法）","Look at this new picture. What is the girl doing? Tell me the whole sentence.",1,"做法有错：句子本身没错，但练的不是你填的目标句型。周六要孩子说的是 I'm …ing。参考：请一个孩子做跳舞动作，问他 What are you doing? — I'm dancing.")
-];
+Power Up Starter【待补】班 · Unit 4 My toys · 课后练习
+孩子5—6岁。本课词：ball, doll, car, kite, teddy　句型：What's this? — It's a ball.
 
-// ---------- ③ 限时课堂判断 ----------
-const LAYERS = ["A｜事实题：答案在原文一句话里直接找得到","B｜逻辑题：要把前后句连起来想","C｜迁移题：联系孩子自己的生活和想法"];
-const MIA = "Mia is sad because her dog is lost. She looks in the garden, but the dog isn't there. Then she hears a sound under her bed. She smiles.";
-const JUDGE = [
- {id:"j1", skill:"先给任务再听", prompt:"第一遍放课文录音前，老师说哪句最好？", options:["Listen and find out: Where are they going?","Listen carefully and repeat.","Listen and write down every word you hear.","Listen and find out: What time does the bus leave, how much is the ticket, and who is driving?"], answer:0, explanation:"第一遍带一个抓大意的问题去听。只说 Listen carefully 等于没给任务；写下每个词太难；一下给三个细节，是第二遍才做的。"},
- {id:"j2", skill:"问题链", group:"mia", groupTitle:"读这段小故事，判断问题属于哪一层", material:MIA, prompt:"Why is Mia sad?", options:LAYERS, answer:0, explanation:"原文一句话里就有 because her dog is lost，直接找得到，是事实题。带 why 不等于逻辑题。"},
- {id:"j3", skill:"问题链", group:"mia", prompt:"Why does Mia smile at the end?", options:LAYERS, answer:1, explanation:"原文没写为什么笑，要把 hears a sound under her bed 和 smiles 连起来，推出狗找到了，是逻辑题。"},
- {id:"j4", skill:"搭梯子", prompt:"孩子看图说不出 It's under the bed.，下面哪个顺序最对？", options:["先给两个选项（On or under?），再给开头 It's…，最后撤掉提示、换一张新图让他自己说","先说整句让他跟读，再换一张图","请旁边会的孩子帮他说","给开头 It's…，接不上就全班一起说，然后下一题"], answer:0, explanation:"两选一 → 给开头 → 撤提示换新图自己说。跟读、让别人说、全班说，都看不到他自己会不会。"},
- {id:"j5", skill:"搭梯子", prompt:"孩子跟着你说出了整句 It's under the bed.，算不算他会了？", options:["不算，换一张新图让他自己说一次才算","算，他已经说出来了","看他发音准不准","让他再跟读两遍就算"], answer:0, explanation:"跟着说只是模仿。撤掉提示、换新图还能自己说，才算会。"},
- {id:"j6", skill:"目标句型", prompt:"你教案写的周六目标句型是 What are you doing? — I'm swimming.。下面哪个提问最对路？", options:["请一个孩子做游泳动作，问他 What are you doing?","指着书上的女孩问 What is she doing?","问 Can you swim?","问 Do you like swimming?"], answer:0, explanation:"目标是孩子自己说 I'm …ing，问题就要问到「你正在做什么」。问书上的女孩，孩子答的是 She is…，练的不是目标句。"},
- {id:"j7", skill:"听力", prompt:"听力题三个选项录音里都说到了，最可靠的做法是？", options:["每听到一个选项，接着听后面是肯定、否定还是改主意，最后定下来的才是答案","选第一个听到的","选听到次数最多的","第一遍就定，第二遍不用听"], answer:0, explanation:"剑桥题的干扰项都会在录音里出现。要听它后面跟的是 but、no、too expensive、last time 还是 that's what I got。"},
- {id:"j8", skill:"B线", prompt:"给 Power Up L1 的孩子出课后练习，哪道题最接近外研版三年级的考法？", options:["看图选句：图上三个苹果，选 A. There are three apples. B. There is three apples.","写一篇80词的作文介绍自己的家","和同伴讨论最喜欢的运动，再上台汇报","跟唱本单元的歌"], answer:0, explanation:"小学三年级常见：看图选词、看图选句、单选、连词成句。80词作文是初中写作；讨论和唱歌是课上的A线活动。"},
- {id:"j9", skill:"AI练习单", prompt:"AI给你出的学生练习单里有一行：Teacher: Ask students to work in pairs and check answers. 怎么处理？", options:["删掉：学生练习单里不能有给老师的话","保留，孩子也看得懂","翻译成中文留着","改成更难的英文"], answer:0, explanation:"Emily在师训上专门说过：学生用的练习单里混进老师话术，就不能直接发。"},
- {id:"j10", skill:"B线", prompt:"B线小测什么时候做，最能看出孩子是不是真会了？", options:["下节课开头，闭卷、限时3分钟","当堂讲完马上做","回家翻书做","不用测，看课上表现就行"], answer:0, explanation:"隔一段时间、闭卷、限时还能做对，才是真掌握。刚讲完就做、翻书做，看不出来。"}
-].map(q => ({type:"choice", ...q}));
-const TARGET = {j1:1, j4:2, j5:3, j6:1, j7:3, j8:2, j9:1, j10:0};
-const place = q => {const t = TARGET[q.id]; if (t === undefined) return q; const right = q.options[q.answer], rest = q.options.filter((_, i) => i !== q.answer); rest.splice(t, 0, right); return {...q, options: rest, answer: t};};
+Teacher's tip: Model the first item, then let students work alone. (3 minutes)
 
-// ---------- ④ 试讲 ----------
-const TEACH = {
- title:"④ 11/21的课试讲", minutes:40, rule:"不看笔记以外的资料，不用AI或翻译",
- intro:["先打开你班的「2026秋季教学计划及教案」，找到11月21日（周六）那节课，把下面4项填真实的，约5分钟。","再写备课，约10分钟：3个问题各一句英文，还有孩子卡住时你给的开头。","然后连续录一段3—5分钟的试讲，约15分钟（可以重录）。","最后回听自己的录音，诚实打6个勾，约5分钟。"],
- audio:[], listening:[], tkt:[],
- setupTitle:"先填11月21日（周六）的课", setupHint:"照你教案里写的填，不留「待补」。录音必须用这里的目标句型，月神会对着教案查。",
- setup:[
-  {id:"s_class", label:"班级", type:"short", prompt:"11/21要上的班", placeholder:"例如：Power Up L1-F班"},
-  {id:"s_lesson", label:"哪一课", type:"short", prompt:"单元和课次", placeholder:"例如：Unit 4 Lesson 3"},
-  {id:"s_target", label:"目标句型", type:"short", prompt:"这节课的目标句型（英文，从教案里复制）", placeholder:"例如：What are you doing? — I'm swimming."},
-  {id:"s_link", label:"教案链接", type:"short", prompt:"这节课所在教案的飞书链接", placeholder:"https://…feishu.cn/wiki/…"}
- ],
- writingTitle:"备课：写下来再录", writingHint:"英文写完整句子。这几句就是你等下要说的。",
+Part 1  Look and match.（看图连线）
+  [图：球]   [图：风筝]   [图：玩具车]        ball　　kite　　car
+
+Part 2  Read and choose.
+  1. ____ is a ball.        A. This　B. These　C. Those
+  2. What ____ this?        A. is　B. are　C. am
+
+Part 3  Write the words.（写出单词）
+  [图：泰迪熊] ________　[图：遥控飞机] ________　[图：拼图] ________
+
+Part 4  Write 3 sentences about your favourite toy.
+
+Part 5  Trace.（描红）　b a l l　　d o l l
+
+（全文完）`;
+const OPT = ["要改","没问题"];
+const SPOT = [
+ {id:"k1", prompt:"标题里的「【待补】班」", answer:0, explanation:"要改。班级、课次要写真的。AI不知道你的班，你在指令里告诉它；它留了「待补」，你自己补上，不能原样发出去。"},
+ {id:"k2", prompt:"「Teacher's tip: Model the first item…」这一行", answer:0, explanation:"要改，删掉。学生练习单里不能有给老师的话。"},
+ {id:"k3", prompt:"Part 1 看图连线（球、风筝、玩具车连单词）", answer:1, explanation:"没问题。用的是本课的词，5—6岁孩子看图认词、连线，做得了。"},
+ {id:"k4", prompt:"Part 2 两道语法单选（This / These / Those，is / are / am）", answer:0, explanation:"要改。这是校内考试的语法题。Starter的孩子还不会读句子，These、Those 也没学过。换成看图圈词或者「听家长读、圈出图」。"},
+ {id:"k5", prompt:"Part 3 里的「遥控飞机」「拼图」", answer:0, explanation:"要改。这两个词这节课没学过，超纲了。只用本课和以前学过的词。"},
+ {id:"k6", prompt:"Part 3 让5—6岁孩子看图把单词写出来", answer:0, explanation:"要改。Starter的孩子还在认字母，不默写单词。改成描红，或者看图圈出对的单词。"},
+ {id:"k7", prompt:"Part 4 写3句话介绍最喜欢的玩具", answer:0, explanation:"要改。5—6岁孩子写不了句子。想让孩子用句子，就放到开口题里说，不要写。"},
+ {id:"k8", prompt:"Part 5 描红 ball、doll", answer:1, explanation:"没问题。本课的词，描红适合这个年龄。"},
+ {id:"k9", prompt:"Part 2「Read and choose.」只有英文说明", answer:0, explanation:"要改。练习单是家长陪着做的，每个大题都要有一句中文说明，家长读给孩子听。"},
+ {id:"k10", prompt:"整份没有一道让孩子开口说的题", answer:0, explanation:"要改。每份都要有开口题：看图说一句 It's a ball.，家长拍30秒视频发班群。孩子开口，家长也看得见孩子学了什么。"}
+].map((q, i) => ({type:"choice", group:"sheet", groupTitle:"先读这份练习单，再逐条判断", material:SHEET, skill:"看出问题", options:OPT, ...q, label:"第"+(i+1)+"处"}));
+
+// ---------- ② 写指令 ----------
+const TYPES = ["看图圈词","看图连线（图和单词）","描红（字母或单词）","按指令涂色","数一数、圈数字","看图选词填空（给词库，只给L1）","听家长读，圈出对应的图","画一画、说一说（draw and say）","开口题：看图说一句，家长拍视频发班群（必选）"];
+const PROMPT = {
+ title:"② 写指令", minutes:20, rule:"自己写，不用AI",
+ intro:["AI不知道你的班、你的孩子、你的家长。这三样你不告诉它，它就按自己想的瞎编。","把下面8项填真实的，页面会拼成一整段指令，在最下面。③开始后把它整段发给AI。","这一段不用AI。"],
+ audio:[], listening:[], tkt:[], speaking:[],
+ writingTitle:"填我的课", writingHint:"用中文写就行，课本上的词和句子照抄英文。",
  writing:[
-  {id:"w_q1", label:"事实题", type:"short", prompt:"一个事实题：答案在课文或图里一句话就能找到（英文）"},
-  {id:"w_q2", label:"逻辑题", type:"short", prompt:"一个逻辑题：要把两句连起来想（Why…? / How do you know?）（英文）"},
-  {id:"w_q3", label:"迁移题", type:"short", prompt:"一个迁移题：问孩子自己（英文）"},
-  {id:"w_start", label:"给的开头", type:"short", prompt:"孩子答不出目标句时，你给的「开头」是哪半句？（英文，只写开头）", placeholder:"例如：I'm…?"},
-  {id:"w_bline", label:"B线小练", type:"short", prompt:"下课前的B线小练：闭卷、限时、写什么？（中文一句）", placeholder:"例如：闭卷3分钟，看3张图写 I'm ___ing."}
+  {id:"p_class", label:"班级", type:"short", prompt:"给哪个班做（写班名）", placeholder:"例如：Power Up Starter-E班"},
+  {id:"p_kids", label:"备学生", type:"long", rows:3, prompt:"几个孩子、几岁、会不会认字写字、这单元会了什么、哪里常错", placeholder:"例如：5个孩子，5—6岁，认得字母、不会写单词。会说 ball、car、doll，能指图回答 It's a ball.；kite 和 teddy 常记混，问 What's this? 只会答一个词。"},
+  {id:"p_parent", label:"备家长", type:"short", prompt:"家长能不能陪着做、最近最关心什么", placeholder:"例如：大多是妈妈晚上陪做，能读简单中文说明；最近最关心孩子敢不敢开口。"},
+  {id:"p_lesson", label:"这节课", type:"short", prompt:"这周末这节课：Power Up 哪一级、Unit 几 Lesson 几、第几次课、课本第几页", placeholder:"例如：Power Up Starter Unit 4 Lesson 3，第12次课，课本第40—41页"},
+  {id:"p_words", label:"词和句", type:"long", rows:3, prompt:"这节课的单词和句型（照着课本抄英文）", placeholder:"例如：ball, doll, car, kite, teddy；What's this? — It's a ball."},
+  {id:"p_target", label:"目标句型", type:"short", prompt:"这节课要孩子会说的目标句型（英文）", placeholder:"例如：What's this? — It's a kite."},
+  {id:"p_types", label:"题型", type:"multi", prompt:"用哪几种题（选3—4种，开口题必选）", options:TYPES},
+  {id:"p_size", label:"成品要求", type:"short", prompt:"多大、几道题、做多久", placeholder:"例如：A4一页，4个大题，孩子10分钟内做完，最后单独附答案"}
  ],
- speakTitle:"试讲录音", speakHint:"直接对孩子说，孩子的回答你自己演，一句带过。中间不要停下来讲理论。",
- speaking:[{id:"t_s1", label:"试讲录音", title:"T-S1｜11/21这节课的一个片段 · 3—5分钟", minSec:180, maxSec:300,
-  prompt:"用你上面填的目标句型，按顺序连续说：\n1. 给任务再听或看：Listen and find out: …?\n2. 依次问你写的事实题、逻辑题、迁移题，每问完停一下等孩子答\n3. 一个孩子卡住：只给你写的开头，停下来等他接\n4. 换一张新图，让他自己把目标句说完整\n5. 再叫一个孩子，用目标句问同伴、同伴回答\n6. 布置你写的B线小练",
-  hint:"不到3分钟算没完成；最长5分钟，到时自动保存。",
-  criteria:["全程用自己填的目标句型","先给任务再听","事实、逻辑、迁移三层都问到了，层次对","卡住时只给开头，没有替孩子说整句","换新图让孩子自己说","孩子之间互相问答","B线小练闭卷、限时、写目标句","老师自己的英语没有单三、has/have、语序错误","录音3分钟以上"]}],
- checksTitle:"回听自评：听完自己的录音再勾", checksHint:"诚实勾。月神会对着录音核，自评和录音对得上，比全勾「做到了」重要。",
- checks:[
-  {id:"c1", label:"目标句型", prompt:"全程用的是我上面填的目标句型", options:["做到了","没做到"]},
-  {id:"c2", label:"先给任务", prompt:"放录音或看图之前，先给了一个要找的问题", options:["做到了","没做到"]},
-  {id:"c3", label:"三层问题", prompt:"事实、逻辑、迁移三个问题都问了，而且层次对", options:["做到了","没做到"]},
-  {id:"c4", label:"只给开头", prompt:"孩子卡住时只给了开头，没有替他把整句说出来", options:["做到了","没做到"]},
-  {id:"c5", label:"换新图", prompt:"换了新图，让孩子自己把目标句说完整", options:["做到了","没做到"]},
-  {id:"c6", label:"自己说对", prompt:"回听了一遍，我说的英语没有单三、has / have、语序这类错", options:["做到了","没做到"], noteWhen:1, notePrompt:"选「没做到」时写出你听到的那句错话"}
+ compose:{title:"拼好的指令（③里整段发给AI）", hint:"上面每改一个字，这里跟着变。还显示「还没填」的地方，回去补完。",
+  template:"你是少儿英语老师的助手。请帮我做一份学生课后练习单，打印出来给家长陪孩子做。\n\n【班级和学生】{{p_class}}。{{p_kids}}\n【家长】{{p_parent}}\n【教材和进度】我们用剑桥 Power Up 教材。这周这节课：{{p_lesson}}\n【只能用这些词和句型】{{p_words}}\n【目标句型】{{p_target}}\n【题型】只用这几种：{{p_types}}\n【成品要求】{{p_size}}\n\n【规矩】\n1. 只要学生用的内容。不要任何给老师的话、教学步骤或上课话术。\n2. 只用上面列出的词和句型，不出现生词；不出语法选择题，不出校内考试题型。\n3. 按孩子年龄出题：还不会写字的孩子只做圈、连、涂、描红，不默写单词、不写句子。\n4. 每个大题配一句中文说明，家长读给孩子听；英文指令越短越好，比如 Look and circle. / Match. / Trace. / Say.\n5. 必须有一道开口题：看图说一句目标句，家长拍30秒视频发班群。\n6. 需要图片的地方写清楚【图：画的是什么】，我自己配图。\n7. 从易到难：先认（圈、连），再辨（选），最后用（说、写）。\n8. 最后单独附答案，给家长对。\n9. 不要写「待补」。有不知道的地方先问我，不要自己编。"},
+ sections:["writing","compose"]
+};
+
+// ---------- ③ 用AI做练习单 ----------
+const MAKE = {
+ title:"③ 用AI做练习单", minutes:60, rule:"这一段要用AI",
+ intro:["打开你用的AI，把②拼好的指令整段发过去。","AI给的第一版一定有问题，至少改2轮：每轮直接告诉AI哪里不行、你要什么。每轮把你发的话和这一版的问题记在下面（可以直接粘贴）。","最后一版AI原稿整段粘贴下来，一个字都别改。然后你自己动手改，改了什么一条一行写清楚。","成品存成飞书文档，分享设「组织内获得链接的人可阅读」，链接贴在最下面；另外导出PDF或截图，交卷时一起发群。"],
+ audio:[], listening:[], tkt:[], speaking:[], setup:[],
+ writingTitle:"过程记录", writingHint:"这一段允许、也要求粘贴。第3轮可以不填。",
+ writing:[
+  {id:"m_tool", label:"用的AI", type:"short", prompt:"这次用的是哪个AI", group:"r0", groupTitle:"用的工具"},
+  {id:"m_r1", label:"第1轮发的", type:"long", rows:4, prompt:"第1轮：你发给AI的话（就是②的指令）", group:"r1", groupTitle:"第1轮"},
+  {id:"m_r1_bad", label:"第1轮问题", type:"short", prompt:"AI第1版哪里不行（中文一两句）", group:"r1"},
+  {id:"m_r2", label:"第2轮发的", type:"long", rows:3, prompt:"第2轮：你发给AI的话（直接说哪里不行、要改成什么）", group:"r2", groupTitle:"第2轮"},
+  {id:"m_r2_bad", label:"第2轮问题", type:"short", prompt:"AI第2版还有哪里不行（没有了就写「可以用了」）", group:"r2"},
+  {id:"m_r3", label:"第3轮发的", type:"long", rows:3, prompt:"第3轮（可不填）：你发给AI的话", group:"r3", groupTitle:"第3轮（可不填）", optional:true},
+  {id:"m_r3_bad", label:"第3轮问题", type:"short", prompt:"AI第3版还有哪里不行", group:"r3", optional:true},
+  {id:"m_final_ai", label:"AI原稿", type:"long", rows:12, max:20000, prompt:"AI最后一版原稿（整段粘贴，一个字都别改）", group:"fin", groupTitle:"AI原稿和我的修改"},
+  {id:"m_changes", label:"我改了什么", type:"long", rows:4, prompt:"我自己动手改了哪些地方（一条一行，至少2条，写清第几题、从什么改成什么）", group:"fin", placeholder:"例如：第3题 AI 用了 puzzle，这节课没学，改成 kite\n删掉了 Part 2 下面的 Teacher's tip\n开口题 AI 写的是英文说明，补了中文：请家长指着图问「这是什么？」"},
+  {id:"m_link", label:"成品链接", type:"short", prompt:"成品飞书文档链接（组织内可阅读）", group:"fin", placeholder:"https://…feishu.cn/docx/…"}
  ],
- sections:["setup","writing","speak","checks"]
+ sections:["writing"]
+};
+
+// ---------- ④ 按标准核对 ----------
+const CK = ["核对过，没问题","发现问题，已改"];
+const CHECKS = [
+ ["对得上这周","标题写了真实班级、Unit 和 Lesson，全文没有「待补」"],
+ ["不超纲","每个词都是这节课或以前学过的 Power Up 词——我对着课本一个个查过"],
+ ["按年龄出","不会写字的孩子只圈、连、涂、描红；没有语法选择题和考试题"],
+ ["从易到难","先认（圈、连），再辨（选），最后用（说、写）"],
+ ["开口题","有一道看图说目标句的开口题，写清楚家长怎么拍、发到哪"],
+ ["家长看得懂","每个大题都有一句中文说明，英文指令很短"],
+ ["没老师话","没有一句给老师的话（Teacher's tip、上课步骤、话术）"],
+ ["图","需要图的题有图，或写清楚了画什么、我已配好"],
+ ["答案","我自己把整份做了一遍，答案每题都对"],
+ ["篇幅排版","A4一页放得下，孩子10—15分钟做得完，字够大、留了写的空"]
+].map(([label, prompt], i) => ({id:"c"+(i+1), label, prompt, options:CK, noteWhen:1, notePrompt:"选「发现问题，已改」时写：哪一题、原来什么、改成什么"}));
+const CHECK = {
+ title:"④ 按标准核对", minutes:20, rule:"自己核对，不用AI",
+ intro:["打开你的成品，按下面10条一条一条核对。发现问题就当场在飞书文档里改，改了什么写下来。","这10条就是以后每份练习单的标准。","最后写清楚这份练习单周末怎么用。"],
+ audio:[], listening:[], tkt:[], speaking:[], setup:[],
+ checksTitle:"按10条标准逐条核对", checksHint:"别一口气全勾「没问题」。AI的第一版几乎不可能10条全对，刘老师会对着你的成品看。",
+ checks:CHECKS,
+ writingTitle:"周末怎么用",
+ writing:[
+  {id:"k_use", label:"怎么用", type:"short", prompt:"这周末哪个班、哪天用；课上做哪几题、几分钟，哪些带回家", placeholder:"例如：E班周六，下课前8分钟做第1、2题，第3、4题和开口题带回家，周日晚上家长发视频"},
+  {id:"k_prompt_note", label:"下次指令", type:"short", prompt:"下次再用AI做练习单，你的指令要先加上哪一句？", placeholder:"例如：孩子还不会写字，所有题只要圈和连"}
+ ],
+ sections:["checks","writing"]
 };
 
 const BASE = {
- listen: {title:"① 听力", minutes:50, rule:"不看笔记，不用AI或翻译",
-  intro:["先做 Part 2 六题，约25分钟：每题先读题和三个选项，再播放；听完马上选，再写依据。","再做 Part 3，约20分钟：先把6个空读完，再播放；一段录音自带两遍，听到就写。","最后留5分钟检查。"],
-  audio:AUDIO, listening:[...P2, ...P3],
-  listenParts:[
-   {id:"P2", title:"Part 2 · 6题 · 听对话，选两个人的看法", rules:["每段对话自带两遍。三个选项录音里一般都会说到，要听清是谁说的、另一个人认不认同、最后定的是什么。","依据要写原话，不是写你选的那个选项。"]},
-   {id:"P3", title:"Part 3 · 6个空 · 听介绍，自己写词", audio:"s-p3", notesTitle:"TV news presenter（先读完6个空，再播放）", rules:["You will hear a man called Phil Lamb telling a group of students about his work as a TV news presenter.","每空写一到两个英文单词。干扰词录音里也会出现，听清 first、but、never 后面跟的是什么。"]}
-  ],
-  setup:[], tkt:[], writing:[], speaking:[], sections:["listen"]},
- fix: {title:"② 改自己说错的句子", minutes:20, rule:"不看笔记，不用AI或翻译",
-  intro:["下面9句，全部是你自己在Vol.4、Vol.5录音里说过的，原样摘出来。有的有错，有的没错。","每句先判断，再在下面写改好的整句；没错就写「不用改」。有两句看的是做法，不是语法，题目里写了。"],
+ spot: {title:"① 看懂好坏", minutes:10, rule:"自己看，不用AI",
+  intro:["下面是一份AI做出来的第一版练习单，跟你等下要做的是同一种东西。","逐条判断10处：要改，还是没问题。选完会看到解析。"],
   audio:[], listening:[], setup:[], writing:[], speaking:[],
-  conceptTitle:"判断并改写", conceptRule:"改写要写完整的一句，像你在课上要说的那样。", tkt:[]},
- judge: {title:"③ 限时课堂判断", minutes:10, limitSeconds:600, rule:"限时10分钟，到点自动锁定",
-  intro:["10道情境题，点「开始并计时」后倒计时10分钟。","到点自动锁定，没选的按未答。一题一分钟，拿不准就先选一个往下走。"],
-  audio:[], listening:[], setup:[], writing:[], speaking:[],
-  conceptTitle:"课堂判断", conceptRule:"每题选一个最合适的。", tkt:JUDGE.map(place)},
- teach: TEACH
+  conceptTitle:"哪里要改", conceptRule:"按「这周末能不能直接发给孩子、家长看不看得懂」来判断。", tkt:SPOT},
+ prompt: PROMPT,
+ make: MAKE,
+ check: CHECK
 };
-const number = (list, k) => list.map((q, i) => ({...q, label: k + (i + 1)}));
-BASE.judge.tkt = number(BASE.judge.tkt, "判断");
-const ORDER = [0,5,1,2,6,3,4,7,8];
-const build = fix => {const p = JSON.parse(JSON.stringify(BASE)); p.fix.tkt = number(ORDER.map(i => fix[i]), "句"); return p;};
-export const PACKETS = {he: build(FIX_HE), zuo: build(FIX_ZUO)};
+const clonePacket = () => JSON.parse(JSON.stringify(BASE));
+export const PACKETS = {he: clonePacket(), zuo: clonePacket()};
