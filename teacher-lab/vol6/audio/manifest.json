@@ -1,0 +1,79 @@
+[
+ {
+  "file": "s-q8.mp3",
+  "sourceStart": 664.6,
+  "sourceEnd": 758.0,
+  "seconds": 93.4,
+  "bytes": 747801,
+  "sha256": "b60c3e7fe971f2685754221dd6bd2fc2c3357cd8822fd9f952078f0d86864031",
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary for Schools handbook for teachers listening audio (709695)",
+  "note": "官方原音连续切段，未放慢或合成；每段含两遍。"
+ },
+ {
+  "file": "s-q9.mp3",
+  "sourceStart": 760.8,
+  "sourceEnd": 833.5,
+  "seconds": 72.7,
+  "bytes": 582289,
+  "sha256": "81adac7c6437793482f9cafd6d74186e2ec1618323f0807afbeb412a3dfc4ff3",
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary for Schools handbook for teachers listening audio (709695)",
+  "note": "官方原音连续切段，未放慢或合成；每段含两遍。"
+ },
+ {
+  "file": "s-q10.mp3",
+  "sourceStart": 835.8,
+  "sourceEnd": 914.5,
+  "seconds": 78.7,
+  "bytes": 630145,
+  "sha256": "1c43f3f1fd1dedff9cd500c74af6a8a7dcd6577d29056ba69c42515cacd85bc7",
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary for Schools handbook for teachers listening audio (709695)",
+  "note": "官方原音连续切段，未放慢或合成；每段含两遍。"
+ },
+ {
+  "file": "s-q11.mp3",
+  "sourceStart": 917.6,
+  "sourceEnd": 1005.5,
+  "seconds": 87.9,
+  "bytes": 703706,
+  "sha256": "7ad73776388e390369d1bff6a6c05958e91a79b7791f15060966d0e6df80bc60",
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary for Schools handbook for teachers listening audio (709695)",
+  "note": "官方原音连续切段，未放慢或合成；每段含两遍。"
+ },
+ {
+  "file": "s-q12.mp3",
+  "sourceStart": 1008.4,
+  "sourceEnd": 1097.5,
+  "seconds": 89.1,
+  "bytes": 713319,
+  "sha256": "d70c919dc3005db4f6ec548f0dc7d1153542b1366114c3ff4db80548a01abf7b",
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary for Schools handbook for teachers listening audio (709695)",
+  "note": "官方原音连续切段，未放慢或合成；每段含两遍。"
+ },
+ {
+  "file": "s-q13.mp3",
+  "sourceStart": 1100.2,
+  "sourceEnd": 1188.0,
+  "seconds": 87.8,
+  "bytes": 703079,
+  "sha256": "864d6b0d933588c8dff43b5975c7d06ee01aa1e9670bc8cf70c4cf7d01a8d8b7",
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary for Schools handbook for teachers listening audio (709695)",
+  "note": "官方原音连续切段，未放慢或合成；每段含两遍。"
+ },
+ {
+  "file": "s-p3.mp3",
+  "sourceStart": 1244.0,
+  "sourceEnd": 1484.0,
+  "seconds": 240.0,
+  "bytes": 1920594,
+  "sha256": "b17d8ba423ba46bae69516c65fa95ca0f1f10bcbfe103825650debea0443df76",
+  "rate": 1,
+  "source": "Cambridge B1 Preliminary for Schools handbook for teachers listening audio (709695)",
+  "note": "官方原音连续切段，未放慢或合成；每段含两遍。"
+ }
+]
