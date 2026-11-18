@@ -28,7 +28,7 @@ export const PROFILES = {
 };
 export const SESSION = {
  totalMinutes: 120,
- window: "11月19日（周四）下午在校区：14:00开始，连续2小时，16:00前交。带能用AI的电脑，带上 Power Up Starter 学生用书。",
+ window: "11月19日（周四）下午在校区：14:00—14:40 先线上磨课试讲，15:00开始做这一卷，连续2小时，17:00前交。带能用AI的电脑，带上 Power Up Starter 学生用书。",
  phases: [
   {title:"① 看懂好坏", minutes:10, detail:"看一份按你这一课做坏的练习单，10处判断要不要改（不用AI）", evidence:"原答"},
   {title:"② 写指令", minutes:20, detail:"填孩子、家长、这一课的词句、题型和成品要求，自动拼成指令（不用AI）", evidence:"指令全文"},
