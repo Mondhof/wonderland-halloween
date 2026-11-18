@@ -1,4 +1,4 @@
-import{META,VERSION,PROFILES,PACKETS,SESSION,SOURCES,REFLECT,MODES}from'./content.mjs?v=r4';
+import{META,VERSION,PROFILES,PACKETS,SESSION,SOURCES,REFLECT,MODES}from'./content.mjs?v=r5';
 import{clone,hasValue,freshTask,freeze,evaluate,missing,exportPackage,completion}from'./state.mjs?v=r1';
 const MAX_BYTES=8*1024*1024;
 const PREFIX=META.prefix,app=document.querySelector('#app');

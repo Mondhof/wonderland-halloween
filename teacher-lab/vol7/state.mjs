@@ -1,4 +1,4 @@
-import{META,VERSION,PROFILES,PACKETS,SESSION,SOURCES,REFLECT,MODES}from'./content.mjs?v=r3';
+import{META,VERSION,PROFILES,PACKETS,SESSION,SOURCES,REFLECT,MODES}from'./content.mjs?v=r4';
 export const clone=x=>JSON.parse(JSON.stringify(x));
 export const hasValue=v=>typeof v==='number'||(typeof v==='string'&&v.trim().length>0)||(Array.isArray(v)&&v.length>0);
 export const norm=s=>String(s??'').toLowerCase().replace(/[’']/g,"'").replace(/[^a-z0-9' ]+/g,' ').replace(/\b(the|a|an|my|his|her|some)\b/g,' ').replace(/\s+/g,' ').trim();

@@ -181,7 +181,7 @@ const prompt = t => ({
   {id:"p_kids", label:"备学生", type:"long", rows:3, prompt:"孩子会不会认字写字、这单元已经会说什么、哪里常错", placeholder:"例如（Unit 2 的）：认得字母、不会写单词。会说 bag、pencil、chair，能答 Where's my pencil? — It's in the bag.；on 和 under 常说反。"},
   {id:"p_parent", label:"备家长", type:"short", prompt:"家长能不能陪着做、最近最关心什么", placeholder:"例如：大多是妈妈晚上陪做，能读简单中文说明；最近最关心孩子敢不敢开口。"},
   {id:"p_words", label:"词和句", type:"long", rows:3, prompt:"这一课的单词和句型（对着课本"+LESSON[t].pages+"抄英文）", placeholder:"例如（Unit 2 的，别照抄）：bag, classroom, pencil, playground, teacher；Where's my pencil? — It's in the bag."},
-  {id:"p_target", label:"目标句型", type:"short", prompt:"这一课要孩子会说的目标句型（英文）。周五 Vol.7 带孩子说、周末开口题，都用这一句", placeholder:"例如（Unit 2 的）：Where's my pencil? — It's under the chair."},
+  {id:"p_target", label:"目标句型", type:"short", prompt:"这一课要孩子会说的目标句型（英文）。Vol.7 带孩子说、周末开口题，都用这一句", placeholder:"例如（Unit 2 的）：Where's my pencil? — It's under the chair."},
   {id:"p_types", label:"题型", type:"multi", prompt:"用哪几种题（选3—4种，开口题必选）", options:TYPES},
   {id:"p_size", label:"成品要求", type:"short", prompt:"多大、几道题、做多久", placeholder:"例如：A4一页，4个大题，孩子10分钟内做完，最后单独附答案"}
  ],
