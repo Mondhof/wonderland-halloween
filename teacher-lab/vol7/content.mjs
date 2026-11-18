@@ -11,7 +11,7 @@ export const META = {
   planTitle:"一次做完，约1小时45分钟，分四段",
   cards:[
    {h:"这次练什么", ps:["① 听力：剑桥B1青少版，都是日常对话和介绍，Vol.1—5没用过。Part 2 三个选项对话里都会说到，要听清两个人最后认同的是什么；Part 3 没有选项，自己写词。","② 改错：句子全是你自己在Vol.4、Vol.5录音里说过的。","③ 自己开口说：Fiona讲的「3×3」，3个表达各换主语造3句，再说3句不重样的表扬，不看稿录一遍。","④ 带孩子说：结构化备课讲的 I say → We say → You say，用你这周末的目标句型，录一段90—120秒。"]},
-   {h:"自己做", ps:["不看笔记、不用AI、不用翻译、不问别人。","学校网络慢：开始①之前，一定先点「下载音频」，7段全部下载完再开始。","④用你周四做练习单的那个班，目标句型从教案里抄。"]}
+   {h:"自己做", ps:["不看笔记、不用AI、不用翻译、不问别人。","学校网络慢：开始①之前，一定先点「下载音频」，7段全部下载完再开始。","④用你周四做练习单的那个班，目标句型用周四练习单开口题的那一句。"]}
   ]
  },
  guide:[
@@ -128,12 +128,12 @@ const SELF = {
 // ---------- ④ 带孩子说（I say → We say → You say） ----------
 const KIDS = {
  title:"④ 带孩子说", minutes:20, rule:"不看笔记，不用AI或翻译",
- intro:["结构化备课讲的：I say 老师示范，We say 带着全班一起说，You say 孩子自己说。老师的话越来越少，孩子的话越来越多。","用你周四做练习单的那个班、这周末那节课的目标句型。先写好每一步说什么，约8分钟。","再录一段90—150秒，约7分钟（可以重录）；回听后勾3个自评。"],
+ intro:["结构化备课讲的：I say 老师示范，We say 带着全班一起说，You say 孩子自己说。老师的话越来越少，孩子的话越来越多。","用你周四做练习单的那个班，目标句型就是周四练习单开口题那一句，周六课上真用。先写好每一步说什么，约8分钟。","再录一段90—150秒，约7分钟（可以重录）；回听后勾3个自评。"],
  audio:[], listening:[], tkt:[],
  setupTitle:"这周末的课", setupHint:"照教案填，不留「待补」。",
  setup:[
-  {id:"c_class", label:"班级", type:"short", prompt:"哪个班", placeholder:"例如：Power Up Starter-E班"},
-  {id:"c_target", label:"目标句型", type:"short", prompt:"这节课的目标句型（英文，从教案里抄）", placeholder:"例如：What's this? — It's a kite."}
+  {id:"c_class", label:"班级", type:"short", prompt:"哪个班", placeholder:"例如：Power Up Starter-X班"},
+  {id:"c_target", label:"目标句型", type:"short", prompt:"目标句型（英文，抄周四练习单开口题那一句）", placeholder:"例如（Unit 2 的）：Where's my pencil? — It's under the chair."}
  ],
  writingTitle:"每一步说什么", writingHint:"I say 最多2句，后面就交给孩子。",
  writing:[
