@@ -1,4 +1,4 @@
-export const VERSION = "2026-11-19.vol6.v3";
+export const VERSION = "2026-11-19.vol6.v3.1";
 export const META = {
  vol:"Vol.6", reviewer:"刘老师", prefix:"wl-vol6-v3:", db:"wonderland-vol6-v3", cache:"wonderland-vol6-cache-v3",
  format:"wonderland-teacher-vol6-response", fileTag:"温德兰_Vol.6",
@@ -10,7 +10,7 @@ export const META = {
   title:"AI写得出来不算数，<br>孩子拿到能做、家长看得懂才算。",
   planTitle:"一次做完，2小时，分四段",
   cards:[
-   {h:"这次要交什么", ps:["按你周日在群里报的进度，给这周末（11月21—22日）那节课做一份学生练习单：左丽慧做 Starter-B、C 两个班共用的一份（Unit 3，课本第28—31页），何静做 Starter-E 班的一份（Unit 4，课本第44—49页）。A4一页，附答案。","AI的过程也要交：每一轮发给AI的话、AI最后一版原稿、你自己动手改了哪些地方。","交上来以后刘老师会看、会改，改好了再发给孩子。"]},
+   {h:"这次要交什么", ps:["按你在群里报的这周末进度，给这周末（11月21—22日）那节课做一份学生练习单：左丽慧做 Starter-B、C 两个班共用的一份（Unit 3，课本第28—31页），何静做 E、F 两个班共用的一份（Starter Unit 4，课本第40—43页）。A4一页，附答案。","AI的过程也要交：每一轮发给AI的话、AI最后一版原稿、你自己动手改了哪些地方。","交上来以后刘老师会看、会改，改好了再发给孩子。"]},
    {h:"开始前准备好", ps:["一台能上网、能用AI的电脑，你平时用哪个AI就用哪个。","Power Up Starter 学生用书，翻到你那几页：书带来，或者把那几页拍好照片。","①②④自己做，不用AI；只有③用AI。"]}
   ]
  },
@@ -23,7 +23,7 @@ export const META = {
 };
 export const MODES = [["spot","① 看懂好坏"],["prompt","② 写指令"],["make","③ 用AI做练习单"],["check","④ 按标准核对"]];
 export const PROFILES = {
- he: {name:"何静", focus:"这次做 Starter-E 班的一份：Power Up Starter Unit 4 At home，课本第44—49页（故事 The three wishes、字母 c、Shapes at home、单元复习），是你周日在群里报的进度。你提的「AI做课后练习」就从这一份开始。上次你的AI教案和作业表还写着「待补」，这次成品里不许出现「待补」。"},
+ he: {name:"何静", focus:"这次做 E、F 两个班共用的一份：Power Up Starter Unit 4 At home，课本第40—43页（家里的东西、房间、Have you got …?、I haven't got …），是你11月18日晚上在群里报的这周末进度。你提的「AI做课后练习」就从这一份开始。上次你的AI教案和作业表还写着「待补」，这次成品里不许出现「待补」。"},
  zuo: {name:"左丽慧", focus:"这次做 Starter-B、C 两个班共用的一份：Power Up Starter Unit 3 Food shopping，课本第28—31页，是你周日在群里报的进度。上次你的AI教案班级写的是「待补」，这次成品里不许出现「待补」。"}
 };
 export const SESSION = {
@@ -39,7 +39,7 @@ export const SESSION = {
 };
 export const SOURCES = {
  training: "做法依据：刘玥《我是如何用AI+飞书帮我备课和课后服务》——AI不知道你的学生和校区，要补齐「备内容、备学生、备家长」；不满意就告诉AI你要什么，别复制完就走；做好的东西存进飞书。南宁师训Emily：先想清楚要什么成品再描述给AI，学生用的练习单不能混老师话术，AI初稿要反复改。",
- standard: "练习单按 Power Up 第二版 Starter（PU0）的实际进度和5—7岁孩子出，不按校内考试题型出。词表依据学生用书 Map of the book 和第28—31、40—49页。",
+ standard: "练习单按 Power Up 第二版 Starter（PU0）的实际进度和5—7岁孩子出，不按校内考试题型出。词表依据学生用书 Map of the book 和第28—31、40—43页。",
  note: "①是选择题，自动判；②③④和练习单成品由刘玥人工看，改好再发给孩子。不排名。"
 };
 export const REFLECT = [
@@ -61,13 +61,13 @@ const LESSON = {
   changesPh:"例如：第3题 AI 用了 pear，书上没有，改成 grapes\n删掉了标题下面的 Teacher's note\n开口题 AI 只写了英文，补了中文：请家长指着图问「有几个胡萝卜？」"
  },
  he: {
-  classLine:"Power Up Starter-E班，5个孩子，5—7岁。",
-  lessonLine:"剑桥 Power Up 第二版 Starter（Power Up 0）。这周末上 Unit 4 At home 的后半部分，学生用书第44—49页（故事 The three wishes、字母 c、Shapes at home、单元复习）。",
-  pages:"第44—49页",
-  allowed:"Unit 4（第40—49页）：bed, clock, computer, lamp, mirror；bathroom, bedroom, garden, kitchen, living room；circle, square, rectangle, triangle；字母 c（cat, clock, carrot, computer, crayon）；I've got … / Have you got …? — Yes, I have. / No, I haven't. / I haven't got ….",
+  classLine:"Power Up Starter-E班（5个孩子，5—7岁）和 F班（4个孩子，9—11岁）共用这一份，两个班都用 Starter 课本，这周末上同样的页码。按年纪小的 E 班出题。",
+  lessonLine:"剑桥 Power Up 第二版 Starter（Power Up 0）。这周末上 Unit 4 At home，学生用书第40—43页（家里的东西、房间、Have you got …?、I haven't got …）。",
+  pages:"第40—43页",
+  allowed:"这一课（第40—43页）：bed, clock, computer, lamp, mirror；bathroom, bedroom, garden, kitchen, living room；I've got … / You've got … / Have you got …? — Yes, I have. / No, I haven't. / We've got … / They've got … / I haven't got … / They haven't got ….",
   before:"以前学过、也能用：数字 one—six、颜色；Unit 1 家人；Unit 2 学校（bag, pencil, chair, table, cupboard…）；Unit 3 食物（apple, banana, grapes, egg, rice…），There's / There are …，How many …?",
-  notYet:"还没学、不能出现：Unit 5 的 ears, eyes, hair, mouth, legs，He's got / She's got / Has he got …?；书上没有的家具（sofa, fridge, TV…）。",
-  usePh:"例如：E班周六，下课前8分钟做第1、2题，其余带回家，周日晚上家长发视频",
+  notYet:"还没学、不能出现：第44页以后的故事 The three wishes、字母 c、形状 circle, square, rectangle, triangle；Unit 5 的 ears, eyes, hair, mouth, legs，He's got / She's got / Has he got …?；书上没有的家具（sofa, fridge, TV…）。",
+  usePh:"例如：E班、F班这周末课上都用，下课前8分钟做第1、2题，其余带回家，周日晚上家长发视频",
   changesPh:"例如：第2题 AI 用了 sofa，书上没有，改成 lamp\n删掉了开头的「上课话术」\n开口题 AI 只写了英文，补了中文：请家长问 Have you got a lamp?"
  }
 };
@@ -108,22 +108,21 @@ Part 6  Ask your partner: How many carrots are there? Write the answer in a full
  he: `【示例：AI做的第一版原稿，班级是虚构的】
 
 Power Up Starter-X班 · Unit 4 At home · 课后练习
-本课词：bed, clock, computer, lamp, mirror；bathroom, bedroom, garden, kitchen, living room；circle, square, rectangle, triangle
-句型：I've got a lamp. / Have you got a clock? — Yes, I have. / No, I haven't.
+本课词：bed, clock, computer, lamp, mirror；bathroom, bedroom, garden, kitchen, living room
+句型：Have you got a clock? — Yes, I have. / No, I haven't. / I haven't got a lamp.
 
-上课话术：先带孩子们复述 The three wishes，再问 Who is angry? 让孩子指图，然后发练习单。
+上课话术：先带孩子们唱 We've got a nice house，再问 Have you got a bed? 请孩子回答，然后发练习单。
 
 第一部分　看图连线（Look and match.）
   [图：床]　[图：钟]　[图：镜子]　[图：台灯]　　　bed　clock　mirror　lamp
 
-第二部分　描红字母 c，再圈出 c 开头的图（Trace and circle.）
-  c　c　c　c　c
-  [图：猫]　[图：钟]　[图：床]　[图：胡萝卜]
+第二部分　听家长说，给房间涂色（Listen and colour.）
+  [图：一座房子，有卧室、厨房、客厅、花园]
+  家长读：Colour the bedroom blue. Colour the kitchen yellow. Colour the garden green.
 
-第三部分　Read the story and answer.
-  Yuri and Anya have got three wishes. They want a big house, a garden and lamps, clocks and mirrors. Then they want to be king and queen. The magic fish is very angry.
-  1. How many wishes have they got? ____________
-  2. Why is the magic fish angry? ____________
+第三部分　听故事，圈一圈（Listen and circle.）
+  家长读 The three wishes 的故事，再问 Who is angry?
+  [图：渔夫]　[图：妻子]　[图：魔法鱼]
 
 第四部分　Choose.
   1. ____ you got a lamp?　　A. Has　B. Have　C. Do
@@ -132,8 +131,9 @@ Power Up Starter-X班 · Unit 4 At home · 课后练习
 第五部分　看图说一说（Look and say.）
   [图：沙发] I've got a sofa.　[图：冰箱] I've got a fridge.　[图：电视] I've got a TV.
 
-第六部分　找一找家里的形状，把图和形状连起来（Find the shapes.）
-  [图：圆圆的钟]　[图：方方的窗户]　[图：三角形的帐篷]　　　○　□　△
+第六部分　你家有没有？有的打 ✓，没有的打 ✗（Look and tick.）
+  家长问：Have you got a computer? Have you got a garden? Have you got a lamp?
+  [图：电脑] ☐　　[图：花园] ☐　　[图：台灯] ☐
 
 第七部分　画出你的卧室，用英文写5句话介绍它。
 
@@ -157,12 +157,12 @@ const SPOTS = {
  he: [
   {id:"k1", prompt:"第四部分 两道选择题（Has / Have / Do；have / has / is）", answer:0, explanation:"要改。这是校内考试的语法单选，孩子读不了句子；She has got 是 Unit 5 才学的。改成看图问答：家长指着图问 Have you got a lamp?，孩子说 Yes, I have. 或 No, I haven't."},
   {id:"k2", prompt:"第一部分 看图连线（床、钟、镜子、台灯连单词）", answer:1, explanation:"没问题。Unit 4 的词，看图连线，5—7岁孩子做得了，也有中文说明。"},
-  {id:"k3", prompt:"开头那段「上课话术：先带孩子们复述…」", answer:0, explanation:"要改，删掉。学生练习单里不能有给老师的话。AI 最常混进来的就是这种，南宁师训 Emily 也专门提过。"},
+  {id:"k3", prompt:"开头那段「上课话术：先带孩子们唱…」", answer:0, explanation:"要改，删掉。学生练习单里不能有给老师的话。AI 最常混进来的就是这种，南宁师训 Emily 也专门提过。"},
   {id:"k4", prompt:"第五部分 sofa、fridge、TV", answer:0, explanation:"要改。sofa、fridge、TV 书上都没学过，超纲了。Unit 4 家里的东西是 bed、clock、computer、lamp、mirror，换成这几个。看图说一说本来就是开口题，还要写清楚家长怎么拍、发到哪。"},
-  {id:"k5", prompt:"第二部分 描红字母 c，再圈出 c 开头的图（猫、钟、床、胡萝卜）", answer:1, explanation:"没问题。课本第46页就是这么练的：描红 c，圈出 cat、clock、carrot 这些 c 开头的，bed 不圈。"},
-  {id:"k6", prompt:"第三部分 读英文故事，写答案", answer:0, explanation:"要改。5—7岁孩子读不了这么长的英文，也写不了答案。The three wishes 是听的故事，改成「家长读、孩子指图」：家长问 Who is angry?，孩子圈出生气的鱼。"},
+  {id:"k5", prompt:"第二部分 家长读，孩子给卧室、厨房、花园涂色", answer:1, explanation:"没问题。房间词是课本第42页的，颜色以前学过，课本第43页也是听了再涂色。家长读、孩子涂，不认字也能做。"},
+  {id:"k6", prompt:"第三部分 听故事 The three wishes，圈出生气的鱼", answer:0, explanation:"要改。The three wishes 在课本第44页，这周末不上。AI 一看到 Unit 4 就把整个单元都放进来，你要对着这周末的第40—43页一题一题查。换成这几页的内容，比如家长读 I haven't got a lamp.，孩子在有台灯、没台灯的两张图里圈对的。"},
   {id:"k7", prompt:"第七部分 画出卧室，用英文写5句话", answer:0, explanation:"要改。孩子写不了句子。改成开口题：画出自己的卧室，指着画说 I've got a bed. I've got a lamp.，家长拍30秒视频发班群。"},
-  {id:"k8", prompt:"第六部分 找家里的形状，把图和形状连起来", answer:1, explanation:"没问题。课本第47页 Shapes at home，图和形状连线，不认字也能做。"},
+  {id:"k8", prompt:"第六部分 家长问 Have you got …?，孩子看自己家打 ✓ 或 ✗", answer:1, explanation:"没问题。用的就是本课的 Have you got …?，孩子只打勾打叉，不用写字；做完还能顺口答 Yes, I have. / No, I haven't."},
   {id:"k9", prompt:"共7大题，排出来A4两页半", answer:0, explanation:"要改。7大题、两页半，孩子15分钟做不完，家长也陪不住。A4一页、4—5个大题就够。"},
   {id:"k10", prompt:"答案只写了第一部分", answer:0, explanation:"要改。每一题的答案都要附上，家长才能对。你自己先从头做一遍，确认每题都对。"}
  ]
@@ -174,7 +174,7 @@ const TYPES = ["看图圈词","看图连线（图和单词）","描红（字母�
 const RULES = "【规矩】\n1. 只要学生用的内容。不要任何给老师的话、教学步骤或上课话术。\n2. 只用上面列出的词和句型，不出现生词；数字只用 one 到 six，颜色只用 red, blue, green, yellow, orange, purple。不出语法选择题，不出校内考试题型。\n3. 孩子还不会写字：只做圈、连、涂、描红，不默写单词、不写句子。\n4. 每个大题配一句中文说明，家长读给孩子听；英文指令越短越好，比如 Look and circle. / Match. / Trace. / Say.\n5. 必须有一道开口题：看图说一句目标句，家长拍30秒视频发班群。\n6. 需要图片的地方写清楚【图：画的是什么】，我自己配图。\n7. 从易到难：先认（圈、连），再辨（选），最后用（说）。\n8. 最后单独附答案，给家长对。\n9. 不要写「待补」。有不知道的地方先问我，不要自己编。";
 const prompt = t => ({
  title:"② 写指令", minutes:20, rule:"自己写，不用AI",
- intro:["AI不知道你的班、你的孩子、你的家长。这三样你不告诉它，它就按自己想的瞎编。","班级和课本页已经按你周日报的进度写进指令了。下面6项填真实的，页面会拼成一整段指令，在最下面。③开始后把它整段发给AI。","这一段不用AI。词和句型对着课本"+LESSON[t].pages+"抄。"],
+ intro:["AI不知道你的班、你的孩子、你的家长。这三样你不告诉它，它就按自己想的瞎编。","班级和课本页已经按你在群里报的这周末进度写进指令了。下面6项填真实的，页面会拼成一整段指令，在最下面。③开始后把它整段发给AI。","这一段不用AI。词和句型对着课本"+LESSON[t].pages+"抄。"],
  audio:[], listening:[], tkt:[], speaking:[],
  writingTitle:"填我的课", writingHint:"用中文写就行，课本上的词和句子照抄英文。下面的「例如」是别的单元的，别照抄。",
  writing:[
