@@ -1,4 +1,4 @@
-export const VERSION = "2026-11-24.vol8.v1";
+export const VERSION = "2026-11-24.vol8.v1.1";
 export const META = {
  vol:"Vol.8", reviewer:"刘老师", prefix:"wl-vol8-v1:", db:"wonderland-vol8-v1", cache:"wonderland-vol8-cache-v1",
  format:"wonderland-teacher-vol8-response", fileTag:"温德兰_Vol.8",
@@ -17,7 +17,7 @@ export const META = {
  guide:[
   ["2小时怎么做",["① TKT 小测20分钟：闭卷，手机收起来。时间一到自动锁定，没做完的按未答。","② 改自己的话20分钟：8句原话，先判断有没有问题，再写你上课真正要说的那一句。","③ 用AI重做一段50分钟：填好孩子和道具，页面拼成一段指令发给AI，至少改2轮；交每轮记录、AI原稿、你自己的修改和定稿。","④ 核对并开口25分钟：按8条标准逐条核对、当场改；再把定稿的前半段对着孩子说一遍，录90—150秒。"]],
   ["录音",["用电脑Chrome常规窗口打开本页，允许麦克风。录完点「停止并保存」，再试听一遍。"]],
-  ["交卷",["在「交卷」里回答3个问题，看缺项，下载答卷。把文件发到英语部群，最后只发一条 @月神。网页不会自动上传。"]]
+  ["交卷",["在「交卷」里回答4个问题，看缺项，下载答卷。把文件发到英语部群，最后只发一条 @月神。网页不会自动上传。"]]
  ]
 };
 export const MODES = [["tkt","① TKT 模块一小测"],["fix","② 改自己的话"],["ai","③ 用AI重做一段"],["check","④ 核对并开口"]];
@@ -33,7 +33,7 @@ export const SESSION = {
   {title:"② 改自己的话", minutes:20, detail:"8句你11月24日磨课里的原话：判断有没有问题，写出上课真正要说的那一句（不用AI）", evidence:"判断和改写"},
   {title:"③ 用AI重做一段", minutes:50, detail:"把磨课最弱的那一段写成10分钟环节；AI至少改2轮；交每轮记录、AI原稿、自己的修改和定稿", evidence:"过程记录和定稿"},
   {title:"④ 核对并开口", minutes:25, detail:"8条标准逐条核对；对着孩子把定稿的前半段说一遍，录90—150秒（不用AI）", evidence:"核对记录和录音"},
-  {title:"交卷", minutes:5, detail:"3个问题，自查缺项，下载答卷", evidence:"答卷发英语部群并@月神"}
+  {title:"交卷", minutes:5, detail:"4个问题，自查缺项，下载答卷", evidence:"答卷发英语部群并@月神"}
  ]
 };
 export const SOURCES = {
@@ -43,9 +43,10 @@ export const SOURCES = {
  note: "①按答案自动判；②③④和录音由刘老师人工看。不换算官方等级，不做两人排名。"
 };
 export const REFLECT = [
- {id:"r1", label:"TKT", prompt:"①里哪几个术语你最没把握？下周想多练哪一类？"},
- {id:"r2", label:"AI", prompt:"③里AI哪一轮最有用？你是怎么让它改对的？"},
- {id:"r3", label:"用在哪", prompt:"③改好的这一段，你准备哪个班、哪天用？"}
+ {id:"r1", label:"有用", prompt:"这次练习哪一段对你上课最有用？具体用在哪个班、哪一步？"},
+ {id:"r2", label:"贴不贴合", prompt:"这次练习贴不贴合你班上的实际（孩子年龄、进度、人数、道具、时间）？哪里不贴合，你觉得应该怎么改？"},
+ {id:"r3", label:"AI", prompt:"③里AI哪一轮最有用？你是怎么让它改对的？"},
+ {id:"r4", label:"TKT", prompt:"①里哪几个术语你最没把握？"}
 ];
 
 // ---------- ① TKT 模块一小测 ----------
