@@ -1,4 +1,4 @@
-export const VERSION = "2026-11-24.vol8.v1.1";
+export const VERSION = "2026-11-24.vol8.v2";
 export const META = {
  vol:"Vol.8", reviewer:"刘老师", prefix:"wl-vol8-v1:", db:"wonderland-vol8-v1", cache:"wonderland-vol8-cache-v1",
  format:"wonderland-teacher-vol8-response", fileTag:"温德兰_Vol.8",
@@ -10,27 +10,27 @@ export const META = {
   title:"点评老师指出来的，<br>这次自己动手改对。",
   planTitle:"一次做完，约2小时，分四段",
   cards:[
-   {h:"这次练什么", ps:["① TKT 模块一小测：20道英文题，闭卷限时20分钟，考术语表一。明年计划考 TKT 模块一、模块二，从这期起每期都有小测。","② 改自己的话：8句全部是你11月24日磨课里说的原话（腾讯会议逐字稿）。","③ 用AI重做磨课里最弱的那一段，把两位点评老师的建议全部落进去。","④ 按8条标准核对，再对着孩子把改好的这一段说一遍、录下来。"]},
+   {h:"这次练什么", ps:["① TKT 模块一小测：20道英文题，闭卷限时20分钟，考术语表一。明年计划考 TKT 模块一、模块二，从这期起每期都有小测。","② 改自己的话：9句全部是你自己说过的原话（磨课逐字稿8句、班级群视频1句）。","③ 用AI重做磨课里最弱的那一段，把两位点评老师的建议全部落进去。","④ 按8条标准核对，再对着孩子把改好的这一段说一遍、录下来。"]},
    {h:"开始前准备好", ps:["一台能上网、能用AI的电脑，平时用哪个AI就用哪个。Power Up Starter 学生用书带来。","①②④自己做，不看笔记、不用AI、不用翻译；只有③用AI。","磨课回放和术语表一，周四之前在坐班时间看完、背熟。"]}
   ]
  },
  guide:[
-  ["2小时怎么做",["① TKT 小测20分钟：闭卷，手机收起来。时间一到自动锁定，没做完的按未答。","② 改自己的话20分钟：8句原话，先判断有没有问题，再写你上课真正要说的那一句。","③ 用AI重做一段50分钟：填好孩子和道具，页面拼成一段指令发给AI，至少改2轮；交每轮记录、AI原稿、你自己的修改和定稿。","④ 核对并开口25分钟：按8条标准逐条核对、当场改；再把定稿的前半段对着孩子说一遍，录90—150秒。"]],
+  ["2小时怎么做",["① TKT 小测20分钟：闭卷，手机收起来。时间一到自动锁定，没做完的按未答。","② 改自己的话20分钟：9句原话，先判断有没有问题，再写你上课真正要说的那一句。","③ 用AI重做一段50分钟：填好孩子和道具，页面拼成一段指令发给AI，至少改2轮；交每轮记录、AI原稿、你自己的修改和定稿。","④ 核对并开口25分钟：按8条标准逐条核对、当场改；再把定稿的前半段对着孩子说一遍，录90—150秒。"]],
   ["录音",["用电脑Chrome常规窗口打开本页，允许麦克风。录完点「停止并保存」，再试听一遍。"]],
   ["交卷",["在「交卷」里回答4个问题，看缺项，下载答卷。把文件发到英语部群，最后只发一条 @月神。网页不会自动上传。"]]
  ]
 };
 export const MODES = [["tkt","① TKT 模块一小测"],["fix","② 改自己的话"],["ai","③ 用AI重做一段"],["check","④ 核对并开口"]];
 export const PROFILES = {
- he: {name:"何静", focus:"这次重点：孩子只说单词、句型练得太少、回答不规范、替孩子答 You're fine——两位点评老师和 Vol.7 反馈都指出过。③重做你磨课里「单词音形意＋Have you got…?」那一段。"},
- zuo: {name:"左丽慧", focus:"这次重点：用中文讲 There is／There are、问「懂了吗」、第一遍听力没任务、老师的英语偏难有错——两位点评老师都指出过。③重做你磨课里 There is／There are 那一段。"}
+ he: {name:"何静", focus:"这次重点：回答不规范、句型练得太少、替孩子答、故事课全用中文——磨课点评、Vol.7 反馈和班级群视频里都看得到。③重做「单词音形意＋Have you got…?」那一段：只用 Yes, I have.／No, I haven't.，每个孩子都要答 No、都要问同伴。"},
+ zuo: {name:"左丽慧", focus:"这次重点：用中文讲规则、用中文提示单词、孩子只说单词、老师的英语偏难有错——磨课点评和班级群视频里都看得到。③重做 There is／There are 那一段，分三步让孩子说整句；C 班周四晚上就能用，B 班周末用。"}
 };
 export const SESSION = {
  totalMinutes: 120,
  window: "11月26日（周四）下午在校区：14:00开始，连续约2小时，16:00前交。①闭卷限时，手机收起来；③要用AI，带能用AI的电脑和 Power Up Starter 学生用书。",
  phases: [
   {title:"① TKT 模块一小测", minutes:20, detail:"20道英文题：12道术语配对＋8道三选一，考术语表一；闭卷，到点自动锁定", evidence:"原答，自动判分"},
-  {title:"② 改自己的话", minutes:20, detail:"8句你11月24日磨课里的原话：判断有没有问题，写出上课真正要说的那一句（不用AI）", evidence:"判断和改写"},
+  {title:"② 改自己的话", minutes:20, detail:"9句你自己上课说的原话（磨课8句＋班级群视频1句）：判断有没有问题，写出上课真正要说的那一句（不用AI）", evidence:"判断和改写"},
   {title:"③ 用AI重做一段", minutes:50, detail:"把磨课最弱的那一段写成10分钟环节；AI至少改2轮；交每轮记录、AI原稿、自己的修改和定稿", evidence:"过程记录和定稿"},
   {title:"④ 核对并开口", minutes:25, detail:"8条标准逐条核对；对着孩子把定稿的前半段说一遍，录90—150秒（不用AI）", evidence:"核对记录和录音"},
   {title:"交卷", minutes:5, detail:"4个问题，自查缺项，下载答卷", evidence:"答卷发英语部群并@月神"}
@@ -89,7 +89,8 @@ const FIX_ZUO = [
  fixItem("z5","指着桌上的一根香蕉","How many banana? Yes, just one.",1,"有问题。How many 后面用复数。参考：How many bananas? Yes, just one!"),
  fixItem("z6","讲 There is／There are（看做法）","当我们表示一个的时候，我们就要用 there's a……懂了吗？Can you understand?",1,"做法有问题：用中文讲规则、再问懂了吗。参考：（指着一根香蕉）One or more than one? — One! — So… There's a banana.（指着三个苹果）One or more than one? — More! — There are apples."),
  fixItem("z7","请孩子用三个西瓜说句子","If I have three watermelon in this table, we should say…",1,"有问题：watermelons，on the table；而且又在讲规则。参考：（摆出三个西瓜）Look! There are…?（停下来，等孩子说 three watermelons）"),
- fixItem("z8","下课前总结","OK, and we have learned there's a blah blah and there are blah blah. Do you know?",1,"有问题：blah blah 等于没总结，Do you know 查不出来。参考：Let's say it together! There's a banana. There are three apples. Great job!")
+ fixItem("z8","下课前总结","OK, and we have learned there's a blah blah and there are blah blah. Do you know?",1,"有问题：blah blah 等于没总结，Do you know 查不出来。参考：Let's say it together! There's a banana. There are three apples. Great job!"),
+ fixItem("z9","11月21日 Starter-B 班，孩子指着水果说不出单词（看做法，班级群视频里的原话）","香蕉怎么说？苹果咋说呀？",1,"做法有问题：用中文提示单词，孩子还是在翻译。参考：（拿起香蕉）What's this? It's a…?（停下来等孩子说 banana）说不出就给第一个音 ba…，不说中文。")
 ];
 const FIX_HE = [
  fixItem("h1","开场问候","How are you today? You're fine. I'm so happy today.",1,"做法有问题：替孩子答了 You're fine（Vol.7 也出现过）。参考：How are you today?（停下来，等孩子答 I'm fine, thank you.）I'm happy too!"),
@@ -99,7 +100,8 @@ const FIX_HE = [
  fixItem("h5","介绍厨房","This room we can kitchen.",1,"有问题。参考：This is the kitchen. We cook in the kitchen."),
  fixItem("h6","数字游戏的指令","This time we will I say the number one two three four five I say the number and you say the words OK.",1,"有问题：太长、语序乱。参考：I say a number, you say the word. Ready? Number one!"),
  fixItem("h7","讲 I've got（看做法）","我们想表达我们有某样东西的时候，我们就可以用 I've got 某样东西。",1,"做法有问题：用中文讲规则。参考：（举起书）I've got a book!（两手空空）I haven't got a book. 再问 CCQ：Have I got a book? Yes or no?"),
- fixItem("h8","你问 Have you got a book?，孩子答 I have got a book.，你说","Book. OK, very good.",1,"做法有问题：没纠正回答方式（Alice 点评）。参考：Yes, I have! Say it: Yes, I have.（等孩子说完再表扬）")
+ fixItem("h8","你问 Have you got a book?，孩子答 I have got a book.，你说","Book. OK, very good.",1,"做法有问题：没纠正回答方式（Alice 点评）。参考：Yes, I have! Say it: Yes, I have.（等孩子说完再表扬）"),
+ fixItem("h9","11月21—22日故事课 The three wishes，孩子复述说不出来时（看做法，班级群视频里的原话）","太贪婪对不对？花园对不对？……所以做人不能太贪心。",1,"做法有问题：孩子用中文复述，老师用中文替孩子把答案说了，还用中文讲道理。参考：指着图问英文关键句 What has he got? — He's got a big house.，让孩子拿道具演一句 I've got a lamp!，说不出就给开头 He's got a…?，不说中文。")
 ];
 
 // ---------- ③ 用AI重做一段 ----------
@@ -108,18 +110,18 @@ const SEG = {
   name:"There is／There are 从呈现到操练（10分钟）",
   classLine:"Power Up Starter-B班，4—5岁，3个孩子，会说6种颜色和数字 one—six，还不会认字写字。",
   lesson:"剑桥 Power Up 第二版 Starter（Power Up 0）Unit 3 Food shopping，学生用书第28—31页。单词：apple, banana, grapes, orange, watermelon；burger, egg, carrot, rice, beans。句型：There's a/an … / There are … / How many … are there?",
-  review:"1. 不要用中文讲语法、不要问 Do you understand：摆出实物，让孩子自己把「一个」和「很多」分开，再用简单问题检查（例如 One or more than one?）。\n2. 第一遍听力要给任务：例如听到哪个水果就指哪个。\n3. 做成购物情境：发购物袋，「我们去 shopping」，用真水果，让孩子摸一摸、闻一闻。\n4. 老师的话要短、要对：用 What can you see?、What do you like?，不用 What does have…?。\n5. 每换一个活动，先说一句过渡语。",
+  review:"1. 不要用中文讲语法、不要问 Do you understand：摆出实物，让孩子自己把「一个」和「很多」分开，再用简单问题检查（例如 One or more than one?）。\n2. 第一遍听力要给任务：例如听到哪个水果就指哪个。\n3. 做成购物情境：发购物袋，「我们去 shopping」，用真水果，让孩子摸一摸、闻一闻。\n4. 老师的话要短、要对：用 What can you see?、What do you like?，不用 What does have…?。\n5. 每换一个活动，先说一句过渡语。\n6. 分三步，每一步孩子都要说整句：先 It's a banana.，再 Three bananas.，最后 There are three bananas.（孩子现在单词还不稳，不能一下跳到 There are）。\n7. 孩子说不出单词时不用中文提示（不说「香蕉怎么说」），用实物加 What's this? It's a…?，等孩子接。",
   propsPh:"例如：真苹果3个、香蕉1根、橙子2个、购物袋3个、课本第30页音频"
  },
  he: {
   name:"单词音形意＋Have you got…? 操练（10分钟）",
   classLine:"L1-F班，三四年级，学过自然拼读，会用 This is…、It's… 介绍，会做简单的自我介绍。",
   lesson:"剑桥 Power Up 第二版 Starter（Power Up 0）Unit 4 At home，学生用书第40—43页。单词：bathroom, bedroom, kitchen, living room, garden；bed, clock, computer, lamp, mirror。句型：Have you got a …? — Yes, I have. / No, I haven't. ；I've got … / I haven't got …",
-  review:"1. 孩子回答要说整句，例如 I see a lot of books.，不只说单词。\n2. 单词的音、形、意都要练：加一个不用PPT的词图配对；bathroom 和 bedroom 遮住单词让孩子拼读、听辨。\n3. 句型练习量要够：把实物发给每个孩子，轮流问 Have you got a mirror?。\n4. 回答要规范：Yes, I have.／No, I haven't.，不说 I haven't got a book 了事。\n5. 不用中文讲 I've got；问完要等孩子自己答，不替孩子说。",
+  review:"1. 孩子回答要说整句，例如 I see a lot of books.，不只说单词。\n2. 单词的音、形、意都要练：加一个不用PPT的词图配对；bathroom 和 bedroom 遮住单词让孩子拼读、听辨。\n3. 句型练习量要够：把实物发给每个孩子，轮流问 Have you got a mirror?。\n4. 回答要规范，只用 Yes, I have.／No, I haven't. 这两种，白板示范也这样写；孩子说成 Yes, I have a pencil、I got a book 要当场改。\n5. 不用中文讲 I've got；问完要等孩子自己答，不替孩子说。\n6. 每个孩子至少答一次 No, I haven't.、至少问同伴一次 Have you got…?，4 个孩子同时两两问，不是两个人上前、两个人看。\n7. 用本单元的词 mirror、lamp、clock、bed、computer，不用上单元的 book、pencil。",
   propsPh:"例如：小镜子、闹钟、台灯图片、单词卡10张、图片卡10张、袋子1个"
  }
 };
-const STANDARDS = ["不用中文讲规则","有检查问题（CCQ）","每个孩子至少说2次整句","老师每句不超过8个词","有实物或PPT以外的活动","听力有任务（这段没有听力就写不涉及）","活动之间有过渡语","每一步写了几分钟"];
+const STANDARDS = ["不用中文讲规则、不用中文提示单词","有检查问题（CCQ）","每个孩子至少说2次整句","老师每句不超过8个词","有实物或PPT以外的活动","听力有任务（这段没有听力就写不涉及）","活动之间有过渡语","每一步写了几分钟"];
 const RULES = "【要求】\n1. 写成10分钟的上课环节，按步骤写，每一步写清楚：几分钟、老师说什么（英文原话）、孩子说什么（英文原话）、用什么道具。\n2. 全程不用中文讲语法规则；用实物、动作、图片让孩子自己发现，再用简单的检查问题（CCQ）确认孩子懂了，不要问 Do you understand?。\n3. 老师说的每一句不超过8个英文单词，只用孩子学过的词。\n4. 每个孩子至少说2次完整的句子。\n5. 至少一个活动不用PPT，用实物或卡片。\n6. 每换一个活动，写一句英文过渡语。\n7. 只用上面列出的单词和句型，不加新词。\n8. 不要写教学理论，不要写「待补」。不知道的先问我，不要自己编。";
 const ai = t => ({
  title:"③ 用AI重做一段", minutes:50, rule:"这一段要用AI",
@@ -152,7 +154,7 @@ const ai = t => ({
 // ---------- ④ 核对并开口 ----------
 const CK = ["核对过，做到了","没做到，已改定稿"];
 const checks = () => [
- ["不讲中文规则","定稿里没有一句用中文讲语法规则"],
+ ["不讲中文","定稿里没有一句用中文讲语法规则，也没有用中文提示单词（「香蕉怎么说」这类）"],
  ["检查问题","有至少2个检查问题（CCQ），没有 Do you understand?／Do you know?"],
  ["孩子整句","每个孩子至少说2次完整的句子，写了说哪一句"],
  ["老师的话短","老师每句不超过8个英文单词，我一句句数过"],
@@ -171,7 +173,7 @@ const check = t => ({
  speaking:[{id:"k_s1", label:"开口录音", title:"K-S1｜定稿前半段 · 90—150秒", minSec:90, maxSec:150,
   prompt:"按定稿的步骤说：先过渡语，再呈现，再问检查问题，再叫孩子一个个说整句。",
   hint:"不到90秒算没完成；最长150秒，到时自动保存。",
-  criteria:["用的是②改好的说法，没有原来的错句","没有用中文讲规则","有检查问题，没有 Do you understand","问完等孩子答，没有替孩子说","孩子说的是整句","老师每句都短"]}],
+  criteria:["用的是②改好的说法，没有原来的错句","没有用中文讲规则、没有用中文提示单词","有检查问题，没有 Do you understand","问完等孩子答，没有替孩子说","孩子说的是整句","老师每句都短"]}],
  writingTitle:"再说一句",
  writing:[
   {id:"k_next", label:"下次先改", type:"short", prompt:"这次录完，你觉得自己上课最该先改掉的一句话是哪句？改成什么？"}
@@ -186,7 +188,7 @@ const BASE = t => ({
   audio:[], listening:[], setup:[], writing:[], speaking:[],
   conceptTitle:"TKT Module 1 practice", conceptRule:"Read each question carefully. Choose one answer for each question.", tkt:TKT1.map(q=>({...q, label:"Q"+q.id.slice(1)}))},
  fix: {title:"② 改自己的话", minutes:20, rule:"不看笔记，不用AI、不用翻译",
-  intro:["下面8句，全部是你11月24日磨课里说的原话，从腾讯会议逐字稿里摘出来（机器转写，和你实际说的不一样时，在改写里注明）。","有的有问题，有的没问题；有两句看的是做法，题目里写了「看做法」。","每句先判断，再写你上课真正要说的那一句；要配动作、道具的，用括号写在前面。没问题写「不用改」。"],
+  intro:["下面9句：8句是你11月24日磨课里说的原话，从腾讯会议逐字稿里摘出来（机器转写，和你实际说的不一样时，在改写里注明）；最后1句是班级群视频里你上课说的。","有的有问题，有的没问题；有几句看的是做法，题目里写了「看做法」。","每句先判断，再写你上课真正要说的那一句；要配动作、道具的，用括号写在前面。没问题写「不用改」。"],
   audio:[], listening:[], setup:[], writing:[], speaking:[],
   conceptTitle:"判断并改写", conceptRule:"改写要写完整的一句，像你明天上课要说的那样，越短越好。", tkt:number(t==="zuo"?FIX_ZUO:FIX_HE, "句")},
  ai: ai(t),
